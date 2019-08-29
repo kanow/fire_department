@@ -1,0 +1,5 @@
+EXT:fluid_styled_content/Configuration/TypoScript,
+EXT:firebrigade_theme/Configuration/TypoScript/Helper,
+EXT:firebrigade_theme/Configuration/TypoScript/Menu/Language,
+
+EXT:operations/Configuration/TypoScript,
