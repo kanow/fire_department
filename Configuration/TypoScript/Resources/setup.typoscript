@@ -1,0 +1,9 @@
+page {
+    includeCSS {
+        firebrigade_theme_layout = EXT:firebrigade_theme/Resources/Public/Css/layout.css
+    }
+
+    includeJSFooter {
+        firebrigade_theme_scripts = EXT:firebrigade_theme/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
