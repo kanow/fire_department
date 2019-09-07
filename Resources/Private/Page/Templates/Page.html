@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<!--
+	get the Layout based on the name of the backend layout
+	the default value is 'Main'
+-->
+
+<f:layout name="{backendLayout}" />
+
+
+<f:section name="pageHeader">
+
+</f:section>
+
+<f:section name="column0">
+    <f:render partial="Columns" arguments="{col: 0, backendLayout: backendLayout}" />
+</f:section>
+
+<f:comment><!--
+Section will be visible if they called in layout file.
+Add more sections for columns if you need.
+
+Example:
+    <f:section name="column1">
+        <f:render partial="Columns" arguments="{col: 1, backendLayout: backendLayout}'}" />
+    </f:section>
+
+Position will be configured in layout file!
+--></f:comment>
+
+<f:section name="pageFooter">
+
+</f:section>
+
+
+
+
+</html>

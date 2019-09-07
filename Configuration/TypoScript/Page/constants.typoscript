@@ -3,9 +3,9 @@
 ############
 page {
     fluidtemplate {
-        layoutRootPath = EXT:firebrigade_theme/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:firebrigade_theme/Resources/Private/Partials/Page/
-        templateRootPath = EXT:firebrigade_theme/Resources/Private/Templates/Page/
+        layoutRootPath = EXT:firebrigade_theme/Resources/Private/Page/Layouts/
+        partialRootPath = EXT:firebrigade_theme/Resources/Private/Page/Partials/
+        templateRootPath = EXT:firebrigade_theme/Resources/Private/Page/Templates/
     }
     meta {
         description =

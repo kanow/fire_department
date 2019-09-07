@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{f:cObject(typoscriptObjectPath: 'kanow.page.checkColumn', data: {column: col})}">
+    <!--TYPO3SEARCH_begin-->
+    <section id="col-{col}" class="col-{col} {classMappings.col{col}}">
+        <f:cObject typoscriptObjectPath="kanow.page.pageColumn" data="{column: col}" />
+    </section>
+    <!--TYPO3SEARCH_end-->
+</f:if>
+
+</html>

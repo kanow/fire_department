@@ -5,43 +5,19 @@ page {
 
     10 = FLUIDTEMPLATE
     10 {
-        # Template names will be generated automaticly by converting the applied
-        # backend_layout, there is no explicit mapping nessesary anymore.
-        #
-        # BackendLayout Key
-        # subnavigation_right_2_columns -> SubnavigationRight2Columns.html
-        #
-        # Backend Record
-        # uid: 1 -> 1.html
-        #
-        # Database Entry
-        # value: -1 -> None.html
-        # value: pagets__subnavigation_right_2_columns -> SubnavigationRight2Columns.html
-        templateName = TEXT
-        templateName {
-            cObject = TEXT
-            cObject {
-                data = pagelayout
-                required = 1
-                case = uppercamelcase
-                split {
-                    token = pagets__
-                    cObjNum = 1
-                    1.current = 1
-                }
-            }
-            ifEmpty = Default
-        }
+        templateName = Page
+        extbase.controllerExtensionName = FirebrigadeTheme
+
         templateRootPaths {
-            0 = EXT:firebrigade_theme/Resources/Private/Templates/Page/
+            0 = EXT:firebrigade_theme/Resources/Private/Page/Templates/
             1 = {$page.fluidtemplate.templateRootPath}
         }
         partialRootPaths {
-            0 = EXT:firebrigade_theme/Resources/Private/Partials/Page/
+            0 = EXT:firebrigade_theme/Resources/Private/Page/Partials/
             1 = {$page.fluidtemplate.partialRootPath}
         }
         layoutRootPaths {
-            0 = EXT:firebrigade_theme/Resources/Private/Layouts/Page/
+            0 = EXT:firebrigade_theme/Resources/Private/Page/Layouts/
             1 = {$page.fluidtemplate.layoutRootPath}
         }
         dataProcessing {
@@ -54,6 +30,26 @@ page {
                 levels = 2
                 includeSpacer = 1
                 as = mainnavigation
+            }
+        }
+        variables {
+            currentPageId = TEXT
+            currentPageId.data = TSFE:id
+
+            # Enable accessing BE Layout auf page/pageParents
+            backendLayout = TEXT
+            backendLayout.stdWrap {
+                cObject = TEXT
+                cObject {
+                    data = levelfield:-2,backend_layout_next_level,slide
+                    override.field = backend_layout
+                    split {
+                        token = pagets__
+                        1.current = 1
+                        1.wrap = |
+                    }
+                }
+                ifEmpty = main
             }
         }
     }
@@ -120,6 +116,31 @@ page {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+#### Page Columns
+######################
+kanow.page.pageColumn < styles.content.get
+kanow.page.pageColumn.select {
+    where = colPos={field:column}
+    where.insertData = 1
+}
+
+#### Check Column
+######################
+# check cols are not empty in fluid partial for columns
+kanow.page.checkColumn = TEXT
+kanow.page.checkColumn {
+    value = 1
+    if.isTrue {
+        numRows = CONTENT
+        numRows {
+            table = tt_content
+            select {
+                where = colPos={field:column}
+                where.insertData = 1
             }
         }
     }
