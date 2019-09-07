@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
             'Kanow\\FirebrigadeTheme\\' => 'Classes'
         ],
     ],
-    'state' => 'stable',
+    'state' => 'alpha',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
