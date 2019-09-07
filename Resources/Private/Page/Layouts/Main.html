@@ -3,9 +3,15 @@
 
 <div class="layout-page off-canvas-content" id="layout-page" data-off-canvas-content>
 
-    <main class="grid" id="content">
+    <div class="page__header"><f:render section="pageHeader" /></div>
+
+
+
+    <main class="page__content grid" id="content">
         <f:render section="column0" />
     </main>
+
+    <div class="page__footer"><f:render section="pageFooter" /></div>
 
 </div>
 
