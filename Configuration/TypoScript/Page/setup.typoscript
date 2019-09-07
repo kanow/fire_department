@@ -29,7 +29,7 @@ page {
             20 {
                 levels = 2
                 includeSpacer = 1
-                as = mainnavigation
+                as = menuMain
             }
         }
         variables {

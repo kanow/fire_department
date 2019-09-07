@@ -1,17 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<nav class="lang"><f:cObject typoscriptObjectPath="kanow.menu.language" /></nav>
 <nav class="main">
     <ul>
-        <f:for each="{mainnavigation}" as="mainnavigationItem">
-            <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-                <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
-                    {mainnavigationItem.title}
+        <f:for each="{menuMain}" as="menuMainItem">
+            <li class="{f:if(condition: menuMainItem.active, then:'active')}">
+                <a href="{menuMainItem.link}" target="{menuMainItem.target}" title="{menuMainItem.title}">
+                    {menuMainItem.title}
                 </a>
-                <f:if condition="{mainnavigationItem.children}">
+                <f:if condition="{menuMainItem.children}">
                     <ul>
-                        <f:for each="{mainnavigationItem.children}" as="child">
+                        <f:for each="{menuMainItem.children}" as="child">
                             <li class="{f:if(condition: child.active, then:'active')}">
                                 <a href="{child.link}" target="{child.target}" title="{child.title}">
                                     {child.title}
@@ -22,6 +21,7 @@
                 </f:if>
             </li>
         </f:for>
-    </ul></nav>
+    </ul>
+</nav>
 
 </html>
