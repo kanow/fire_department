@@ -1,6 +1,8 @@
+header {
+  background-color: $primary-color;
+}
 .page {
   &__header {
-    background-color: $primary-color;
     &--left {
       text-align: center;
       & .logo {
