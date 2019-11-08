@@ -1,0 +1,42 @@
+.page {
+  &__header {
+    background-color: $primary-color;
+    &--left {
+      text-align: center;
+      & .logo {
+        margin-top:3em;
+        clear: both;
+      }
+    }
+  }
+}
+
+.menu {
+  &__row {
+    width: 100%;
+
+  }
+}
+.top-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $secondary-color;
+}
+.dropdown.menu {
+  li {
+    background-color: $secondary-color;
+    border-left: 1px solid $global-nav-border-color;
+
+    &:last-child {
+      border-right: 1px solid $global-nav-border-color;
+    }
+    a {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  }
+}
+.special-headline {
+  text-transform: uppercase;
+  margin: 0;
+}
