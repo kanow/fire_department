@@ -61,7 +61,9 @@ header {
   }
 
 }
-.special-headline {
-  text-transform: uppercase;
+.headline {
+  &.lead {
+    text-transform: uppercase;
+  }
   margin: 0;
 }
