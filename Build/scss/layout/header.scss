@@ -13,24 +13,22 @@ header {
     &--left {
       text-align: center;
       & .logo {
-        margin-top:3em;
+        margin-top:1em;
         clear: both;
       }
     }
   }
 }
 
-.menu {
-  &__row {
-    width: 100%;
-
-  }
-}
-.top-bar {
-  padding-top: 0;
-  padding-bottom: 0;
+#main-menu {
   background-color: $secondary-color;
+  margin-bottom: $global-padding * 2;
 }
+
+.content-header {
+  //margin: $global-padding 0;
+}
+
 .dropdown.menu.medium-horizontal {
   > li {
     background-color: $secondary-color;
