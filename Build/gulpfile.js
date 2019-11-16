@@ -2,14 +2,16 @@ var gulp          = require('gulp');
 var browserSync   = require('browser-sync').create();
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
+var del = require('del');
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',
   'node_modules/motion-ui/src'
 ];
+var foundationPath = 'node_modules/foundation-sites/';
 
 function sass() {
-  return gulp.src('scss/app.scss')
+  return gulp.src('src/scss/app.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
@@ -18,19 +20,36 @@ function sass() {
     .pipe($.postcss([
       autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
     ]))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 };
 
 function serve() {
   browserSync.init({
-    server: "./"
+    server: "./dist/"
   });
 
-  gulp.watch("scss/**/*.scss", sass);
-  gulp.watch("*.html").on('change', browserSync.reload);
+  gulp.watch("src/scss/**/*.scss", sass);
+  gulp.watch("templates/**/*.html", copyHtml).on('change', browserSync.reload);
+  gulp.watch("src/js/**/*.js", copyJs).on('change', browserSync.reload);
+}
+function copyJs() {
+    return gulp.src([foundationPath + 'js/foundation.core.js',foundationPath + 'js/foundation.dropdownMenu.js', 'src/js/**/*.js'])
+        .pipe(gulp.dest('dist/js'));
+}
+function copyHtml() {
+    return gulp.src('templates/**/*.html')
+        .pipe(gulp.dest('dist'));
+}
+function copyAssets() {
+    return gulp.src('src/assets/**/*')
+        .pipe(gulp.dest('dist/assets'));
+}
+function clean() {
+    return del(['dist']);
 }
 
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
-gulp.task('default', gulp.series('sass', serve));
+gulp.task('copy', gulp.series(copyJs, copyHtml, copyAssets));
+gulp.task('default', gulp.series(clean, 'sass', 'copy', serve));

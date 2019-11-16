@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp sass",
+    "copy": "gulp copy",
+    "delete": "gulp delete"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
+    "del": "^5.1.0",
     "gulp": "^4.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-postcss": "^8.0.0",
