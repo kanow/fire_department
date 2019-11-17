@@ -32,30 +32,32 @@
 <div class="grid-container fluid" id="main-menu">
     <div class="grid-container">
         <div class="grid-x grid-padding-x medium-8">
-            <ul class="cell menu vertical medium-horizontal expanded medium-text-left" data-responsive-menu="drilldown medium-dropdown">
-                <li class="has-submenu"><a href="#">Feurwehr Hauptwache 1</a>
-                    <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">Einsätze</a></li>
-                        <li><a href="#">Amtsleiter</a></li>
-                        <li><a href="#">Kinder- und Jugendabteilung</a></li>
-                        <li><a href="#">Das Leben in der Wache</a></li>
-                        <li><a href="#">Werkstätten</a></li>
-                    </ul>
-                </li>
-                <li class=""><a href="#">Termine / Dienstabende</a>
-                </li>
-                <li class="has-submenu"><a href="#">Ausrüstung / Technik</a>
-                    <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">Fahrzeuge</a></li>
-                        <li><a href="#">Spezialausrüstung</a></li>
-                        <li><a href="#">Hilfsmittel</a></li>
-                    </ul>
-                </li>
-                <li class=""><a href="#">Feuerwehrsport</a></li>
-                <li class=""><a href="#">Wasserrettung</a>
-                </li>
-                <li class=""><a href="#">Katastrophenschutz</a></li>
-            </ul>
+            <div class="cell">
+                <ul class="dropdown menu horizontal expanded medium-text-left" data-dropdown-menu>
+                    <li class="is-dropdown-submenu-parent"><a href="#">Feurwehr Hauptwache 1</a>
+                        <ul class="submenu menu vertical" data-submenu>
+                            <li><a href="#">Einsätze</a></li>
+                            <li><a href="#">Amtsleiter</a></li>
+                            <li><a href="#">Kinder- und Jugendabteilung</a></li>
+                            <li><a href="#">Das Leben in der Wache</a></li>
+                            <li><a href="#">Werkstätten</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="#">Termine / Dienstabende</a>
+                    </li>
+                    <li class="has-submenu"><a href="#">Ausrüstung / Technik</a>
+                        <ul class="submenu menu vertical" data-submenu>
+                            <li><a href="#">Fahrzeuge</a></li>
+                            <li><a href="#">Spezialausrüstung</a></li>
+                            <li><a href="#">Hilfsmittel</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="#">Feuerwehrsport</a></li>
+                    <li class=""><a href="#">Wasserrettung</a>
+                    </li>
+                    <li class=""><a href="#">Katastrophenschutz</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -319,8 +321,6 @@
 </footer>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/foundation.core.js"></script>
-    <script src="js/foundation.dropdownMenu.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

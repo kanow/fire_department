@@ -28,7 +28,9 @@
     "gulp": "^4.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
   "repository": {
     "type": "git",

@@ -4,6 +4,8 @@ var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
 var del = require('del');
 
+var webpack = require('webpack-stream');
+
 var sassPaths = [
   'node_modules/foundation-sites/scss',
   'node_modules/motion-ui/src'
@@ -35,6 +37,12 @@ function serve() {
 }
 function copyJs() {
     return gulp.src([foundationPath + 'js/foundation.core.js',foundationPath + 'js/foundation.dropdownMenu.js', 'src/js/**/*.js'])
+        .pipe(webpack({
+            mode: 'development',
+            output: {
+                filename: 'app.js'
+            }
+        }))
         .pipe(gulp.dest('dist/js'));
 }
 function copyHtml() {
