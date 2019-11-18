@@ -36,7 +36,7 @@ function serve() {
   gulp.watch("src/js/**/*.js", copyJs).on('change', browserSync.reload);
 }
 function copyJs() {
-    return gulp.src([foundationPath + 'js/foundation.core.js',foundationPath + 'js/foundation.dropdownMenu.js', 'src/js/**/*.js'])
+    return gulp.src(['src/js/**/*.js'])
         .pipe(webpack({
             mode: 'development',
             output: {
