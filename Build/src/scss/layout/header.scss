@@ -20,6 +20,14 @@ header {
   }
 }
 
+.title-bar {
+  background-color: $primary-color;
+  .menu {
+    a {
+      color: #fff;
+    }
+  }
+}
 #main-menu {
   background-color: $secondary-color;
   margin-bottom: $global-padding * 2;

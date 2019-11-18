@@ -8,7 +8,20 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-
+  <div data-responsive-toggle="main-menu" data-hide-for="medium" data-sticky-container >
+      <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium" data-sticky data-options="marginTop:0;" style="width:100%">
+          <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          <div class="title-bar-title">Menu</div>
+          <ul class="dropdown-menu menu vertical" id="responsive-menu">
+              <li><a href="#">Feurwehr Hauptwache 1</a></li>
+              <li><a href="#">Termine / Dienstabende</a></li>
+              <li><a href="#">Ausrüstung / Technik</a></li>
+              <li><a href="#">Feuerwehrsport</a></li>
+              <li class=""><a href="#">Wasserrettung</a></li>
+              <li><a href="#">Katastrophenschutz</a</li>
+          </ul>
+      </div>
+  </div>
 <header class="grid-container fluid">
     <div class="grid-container">
     <!-- logo and ad break -->
@@ -21,11 +34,6 @@
         </div>
     </div>
     <!-- / logo and ad break -->
-
-    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle></button>
-        <div class="title-bar-title">Menu</div>
-    </div>
 </div>
 </header>
 
@@ -64,10 +72,10 @@
 
 <div class="grid-container main-content">
     <div class="grid-x grid-margin-x content-teaser">
-        <div class="medium-8 cell">
+        <div class="small-8 cell">
             <p><img src="assets/firefighters-3.jpg" alt="main article image"></p>
         </div>
-        <div class="medium-4 cell">
+        <div class="small-4 cell">
             <p><img src="assets/fire-4.jpg" alt="article promo image" alt="advertisement for deep fried Twinkies"></p>
             <p><img src="assets/firefighters-1.jpg" alt="article promo image"></p>
         </div>
@@ -230,36 +238,35 @@
             <aside>
                 <h3 class="headline text-center">Feuerwehr in Zahlen</h3>
                 <div class="grid-x">
-                    <div class="cell small-12 medium-4 text-center">
+                    <div class="cell small-6 large-4 text-center">
                         <h6>Einsätze im letzten Jahr</h6>
                         <p><strong>256</strong></p>
                         <br>
                     </div>
 
-                    <div class="cell small-12 medium-4 text-center">
+                    <div class="cell small-6 large-4 text-center">
                         <h6>Einsatzbereite Kameraden</h6>
                         <p><strong>57</strong></p>
                         <br>
                     </div>
 
-                    <div class="cell small-12 medium-4  text-center">
+                    <div class="cell small-6 large-4  text-center">
                         <h6>Arbeitsstunden gesamt im Jahr 2019</h6>
                         <p><strong>38.456</strong></p>
                         <br>
                     </div>
-                </div>
-                <div class="grid-x">
-                    <div class="cell small-12 medium-4  text-center">
+
+                    <div class="cell small-6 large-4  text-center">
                         <h6>Fahrzeuge</h6>
                         <p><strong>24</strong></p>
                     </div>
 
-                    <div class="cell small-12 medium-4  text-center">
+                    <div class="cell small-6 large-4  text-center">
                         <h6>Fehlalarme 2019</h6>
                         <p><strong>36</strong></p>
                     </div>
 
-                    <div class="cell small-12 medium-4  text-center">
+                    <div class="cell small-6 large-4  text-center">
                         <i class="fi-social-youtube"></i>
                         <h6>Durchgeführte Schulungen</h6>
                         <p><strong>28</strong></p>
