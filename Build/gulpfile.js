@@ -46,10 +46,7 @@ async function copyJs() {
         }))
         .pipe(gulp.dest('dist/js'));
 }
-// function copyHtml() {
-//     return gulp.src('pages/**/*.html')
-//         .pipe(gulp.dest('dist'));
-// }
+
 async function copyAssets() {
     return gulp.src('src/assets/**/*')
         .pipe(gulp.dest('dist/assets'));
