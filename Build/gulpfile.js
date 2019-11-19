@@ -33,7 +33,7 @@ async function serve() {
 
   gulp.watch("src/scss/**/*.scss", sass);
   // gulp.watch("pages/**/*.html", copyHtml).on('change', browserSync.reload);
-  gulp.watch(['./src/pages/{layouts,partials,helpers,data}/**/*'], gulp.series([panini.refresh]));
+  gulp.watch(['src/pages/{layouts,partials,helpers,data}/**/*'], panini.refresh);
   gulp.watch("src/js/**/*.js", copyJs).on('change', browserSync.reload);
 }
 async function copyJs() {
