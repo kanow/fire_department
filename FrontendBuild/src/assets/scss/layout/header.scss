@@ -1,0 +1,21 @@
+.page__header-wrap {
+  //background-color: $primary-color;
+  background: repeating-linear-gradient(
+    to right,
+    #fff,
+    #fff 130px,
+    $primary-color 0px,
+    $primary-color 160px
+  );
+}
+.page {
+  &__header {
+    &--left {
+      text-align: center;
+      & .logo {
+        margin-top:1em;
+        clear: both;
+      }
+    }
+  }
+}
