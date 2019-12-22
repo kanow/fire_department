@@ -3,6 +3,7 @@ node_modules
 npm-debug.log
 bower_components
 dist
+config.yml
 *.swp
 .cache
 .idea
