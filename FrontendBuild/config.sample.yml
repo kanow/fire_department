@@ -17,7 +17,7 @@ UNCSS_OPTIONS:
 PATHS:
   # Path to dist folder
   dist:
-    typo3: "../packages/%EXTENSION%/Resources/Public/_Default"
+    typo3: "../Resources/Public"
     dist: "dist"
 
   # Path to asset folders
@@ -40,8 +40,8 @@ PATHS:
 WATCH:
     additionalPaths:
         typo3:
-            - "../web/typo3conf/ext/%EXTENSION%/Configuration/**"
-            - "../web/typo3conf/ext/%EXTENSION%/Resources/Private/**"
+          - "../../public/typo3conf/ext/%EXTENSION%/Configuration/**"
+          - "../../public/typo3conf/ext/%EXTENSION%/Resources/Private/**"
     host: www.projectdomain.de.lan
     protocol: https
 
