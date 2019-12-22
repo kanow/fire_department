@@ -16,6 +16,21 @@ This extension is in an very earlier alpha state! Please do not use in productio
 
 I change this documentation if I think the extension ist ready for this.
 
+# Frontend build 
+
+I use Foundation Sites 6 to build the frontend stuff like css and js. If you want to change the frontend styling you need some software requirements on your computer. Please read the "Installation" section in the ZurbReadme.md file in the folder "FrontendBuild".
+
+Fork the repository to keep your changes in your project.
+
+After copying and renaming the config.sample.yml file you have to adapt the projectdomain entry in the additional watch path to use the frontend build tool directly with your TYPO3 website. To start devloping and watching the files by the frontend toll you have to use the following command.
+
+    yarn run start --typo3
+     
+With
+  
+    yarn run build --typo3
+    
+you can copy the the final frontend files to the TYPO3 extension Public folder without opening the website in browser.   
 
 # TYPO3 Website für Feuerwehren
 
