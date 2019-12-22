@@ -1,0 +1,11 @@
+.page {
+  &__footer {
+    margin-bottom: $global-padding;
+    border-bottom: 1px solid $medium-gray;
+    &--menu {
+      :first-child a {
+        padding-left: 0;
+      }
+    }
+  }
+}
