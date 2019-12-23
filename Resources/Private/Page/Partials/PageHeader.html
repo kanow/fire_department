@@ -1,14 +1,16 @@
 <header class="page__header-wrap grid-container fluid">
     <div class="grid-container">
-        <!-- logo and ad break -->
+        <!-- logo -->
         <div class="grid-x page__header">
             <div class="small-3 large-4 cell page__header--left">
-                <img src="assets/img/FeuerwehrLogo.png" alt="Feuerwehr Logo" class="logo" width="200">
+                <f:if condition="{settings.pageLogo.path}">
+                    <f:image src="{settings.pageLogo.path}" class="lgoo" alt="{setttings.pageLogo.alternative}" width="{settings.pageLogo.width}" />
+                </f:if>
             </div>
             <div class="small-8 small-offset-1 large-offset-0 cell page__header--right">
                 <img src="assets/img/header-1.jpg" alt="advertisement for deep fried Twinkies">
             </div>
         </div>
-        <!-- / logo and ad break -->
+        <!-- / logo -->
     </div>
 </header>

@@ -22,4 +22,11 @@ page {
             anonymizeIp = 1
         }
     }
+    settings {
+        pageLogo {
+            path = EXT:firebrigade_theme/Resources/Public/Build/img/FeuerwehrLogo.png
+            alternative = Feuerwehr Logo
+            width = 200
+        }
+    }
 }

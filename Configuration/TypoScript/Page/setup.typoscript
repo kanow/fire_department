@@ -52,6 +52,13 @@ page {
                 ifEmpty = main
             }
         }
+        settings {
+            pageLogo {
+                path = {$page.settings.pageLogo.path}
+                alternative = {$page.settings.pageLogo.alternative}
+                width = {$page.settings.pageLogo.width}
+            }
+        }
     }
 
     meta {
