@@ -10,15 +10,15 @@ page {
 
         templateRootPaths {
             0 = EXT:firebrigade_theme/Resources/Private/Page/Templates/
-            1 = {$page.fluidtemplate.templateRootPath}
+            1 = {$firebrigade.page.fluidtemplate.templateRootPath}
         }
         partialRootPaths {
             0 = EXT:firebrigade_theme/Resources/Private/Page/Partials/
-            1 = {$page.fluidtemplate.partialRootPath}
+            1 = {$firebrigade.page.fluidtemplate.partialRootPath}
         }
         layoutRootPaths {
             0 = EXT:firebrigade_theme/Resources/Private/Page/Layouts/
-            1 = {$page.fluidtemplate.layoutRootPath}
+            1 = {$firebrigade.page.fluidtemplate.layoutRootPath}
         }
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -34,7 +34,7 @@ page {
             25 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             25 {
                 special = directory
-                special.value = {$page.settings.pids.menu.footer}
+                special.value = {$firebrigade.page.settings.pids.menu.footer}
                 levels = 1
                 as = menuFooter
             }
@@ -64,40 +64,40 @@ page {
             }
             pageMediaIfEmpty = IMG_RESOURCE
             pageMediaIfEmpty {
-                file = {$page.settings.pageMediaIfEmpty.path}
-                stdWrap.if.isTrue = {$page.settings.pageMediaIfEmpty.path}
+                file = {$firebrigade.page.settings.pageMediaIfEmpty.path}
+                stdWrap.if.isTrue = {$firebrigade.page.settings.pageMediaIfEmpty.path}
             }
         }
         settings {
             pageLogo {
-                path = {$page.settings.pageLogo.path}
-                alternative = {$page.settings.pageLogo.alternative}
-                width = {$page.settings.pageLogo.width}
+                path = {$firebrigade.page.settings.pageLogo.path}
+                alternative = {$firebrigade.page.settings.pageLogo.alternative}
+                width = {$firebrigade.page.settings.pageLogo.width}
             }
             pageMedia {
-                width = {$page.settings.pageMedia.width}
-                height = {$page.settings.pageMedia.height}
+                width = {$firebrigade.page.settings.pageMedia.width}
+                height = {$firebrigade.page.settings.pageMedia.height}
             }
         }
     }
 
     meta {
-        viewport = {$page.meta.viewport}
-        robots = {$page.meta.robots}
-        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
-        description = {$page.meta.description}
+        viewport = {$firebrigade.page.meta.viewport}
+        robots = {$firebrigade.page.meta.robots}
+        apple-mobile-web-app-capable = {$firebrigade.page.meta.apple-mobile-web-app-capable}
+        description = {$firebrigade.page.meta.description}
         description {
             override.field = description
         }
-        author = {$page.meta.author}
+        author = {$firebrigade.page.meta.author}
         author {
             override.field = author
         }
-        keywords = {$page.meta.keywords}
+        keywords = {$firebrigade.page.meta.keywords}
         keywords {
             override.field = keywords
         }
-        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible = {$firebrigade.page.meta.compatible}
         X-UA-Compatible {
             attribute = http-equiv
         }
@@ -111,7 +111,7 @@ page {
             attribute = property
             data = TSFE:tmpl|setup|sitetitle
         }
-        og:description = {$page.meta.description}
+        og:description = {$firebrigade.page.meta.description}
         og:description {
             attribute = property
             field = description
