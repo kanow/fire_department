@@ -1,0 +1,33 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            twoColumns {
+                title = LLL:EXT:firebrigade_theme/Resources/Private/Language/locallang_db.xlf:backend_layout.twoColumns
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:firebrigade_theme/Resources/Private/Language/locallang_db.xlf:backend_layout.column.normal
+                                        colPos = 0
+                                    }
+                                    2 {
+                                        name = LLL:EXT:firebrigade_theme/Resources/Private/Language/locallang_db.xlf:backend_layout.column.aside
+                                        colPos = 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:firebrigade_theme/Resources/Public/Images/BackendLayouts/twoColumns.svg
+            }
+        }
+    }
+}

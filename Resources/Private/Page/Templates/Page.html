@@ -8,7 +8,6 @@
 
 <f:layout name="{backendLayout}" />
 
-
 <f:section name="pageHeader">
     <f:render partial="PageHeader" arguments="{_all}" />
 </f:section>
@@ -17,54 +16,12 @@
     <f:render partial="Menu/Main" arguments="{menuMain:menuMain}" />
 </f:section>
 
-<div class="grid-container fluid" id="main-menu">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x medium-8">
-            <div class="cell">
-                <f:comment>
-                    <ul class="dropdown menu horizontal expanded medium-text-left" data-dropdown-menu>
-                        <li class="is-dropdown-submenu-parent"><a href="subpage.html">Feurwehr Hauptwache 1</a>
-                            <ul class="submenu menu vertical" data-submenu>
-                                <li><a href="#">Einsätze</a></li>
-                                <li><a href="#">Amtsleiter</a></li>
-                                <li><a href="#">Kinder- und Jugendabteilung</a></li>
-                                <li><a href="#">Das Leben in der Wache</a></li>
-                                <li><a href="#">Werkstätten</a></li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="subpage.html">Termine / Dienstabende</a>
-                        </li>
-                        <li class="has-submenu"><a href="subpage.html">Ausrüstung / Technik</a>
-                            <ul class="submenu menu vertical" data-submenu>
-                                <li><a href="#">Fahrzeuge</a></li>
-                                <li><a href="#">Spezialausrüstung</a></li>
-                                <li><a href="#">Hilfsmittel</a></li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="subpage.html">Feuerwehrsport</a></li>
-                        <li class=""><a href="subpage.html">Wasserrettung</a>
-                        </li>
-                        <li class=""><a href="#">Katastrophenschutz</a></li>
-                    </ul>
-                </f:comment>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-        <f:section name="column-0">
-            <div class="medium-8 cell" style="border-right: 1px solid #E3E5E8;">
-                <f:render partial="Columns" arguments="{col: 0, backendLayout: backendLayout}" />
-            </div>
-        </f:section>
-        <f:section name="column-2">
-            <div class="medium-4 cell">
-              <aside>
-                  <f:render partial="Columns" arguments="{col: 2, backendLayout: backendLayout}" />
-              </aside>
-            </div>
-        </f:section>
+<f:section name="column-0">
+    <f:render partial="Columns" arguments="{col: 0, backendLayout: backendLayout}" />
+</f:section>
+<f:section name="column-2">
+    <f:render partial="Columns" arguments="{col: 2, backendLayout: backendLayout}" />
+</f:section>
 
 <f:comment><!--
 Section will be visible if they called in layout file.

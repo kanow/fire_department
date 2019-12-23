@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="layout-page off-canvas-content" id="layout-page" data-off-canvas-content>
+
+    <div class="page__header"><f:render section="pageHeader" /></div>
+
+    <div class="grid-container fluid" id="main-menu">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x medium-8">
+                <f:render section="menu-main" />
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container main-content">
+        <div class="grid-x grid-padding-x">
+            <div class="medium-8 cell" style="border-right: 1px solid #E3E5E8;">
+                <f:render section="column-0" />
+            </div>
+            <div class="medium-4 cell">
+                <aside>
+                    <f:render section="column-2" />
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="grid-container page__footer">
+        <f:render section="pageFooter" />
+    </footer>
+
+
+</div>
+
+</html>

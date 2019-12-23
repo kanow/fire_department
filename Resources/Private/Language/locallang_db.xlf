@@ -7,6 +7,19 @@
         </header>
         <body>
 
+            <trans-unit id="backend_layout.default">
+                <source>One column (default)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Main column</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.twoColumns">
+                <source>Two columns</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.aside">
+                <source>Aside column</source>
+            </trans-unit>
+
             <trans-unit id="pageHeader.crop_variant.title">
                 <source>Crop page header</source>
             </trans-unit>

@@ -1,4 +1,0 @@
-#
-# BACKENDLAYOUTS
-#
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:firebrigade_theme/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="page.typoscript">
