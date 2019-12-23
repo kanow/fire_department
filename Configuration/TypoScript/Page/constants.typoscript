@@ -35,5 +35,10 @@ page {
         pageMediaIfEmpty {
             path = EXT:firebrigade_theme/Resources/Public/Build/img/header-1.jpg
         }
+        pids {
+            menu {
+                footer = 25
+            }
+        }
     }
 }

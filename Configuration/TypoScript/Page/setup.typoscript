@@ -29,8 +29,14 @@ page {
             20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             20 {
                 levels = 2
-                includeSpacer = 1
                 as = menuMain
+            }
+            25 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            25 {
+                special = directory
+                special.value = {$page.settings.pids.menu.footer}
+                levels = 1
+                as = menuFooter
             }
             30 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
             30 {

@@ -1,12 +1,16 @@
 
     <div class="grid-x grid-padding-x">
         <div class="cell">
-            <f:comment>
+            <f:if condition="{menuFooter}">
                 <ul class="menu page__footer--menu">
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Impressum</a></li>
-                    <li><a href="#">Datenschutz</a></li>
+                    <f:for as="menu-item" each="{menuFooter}">
+                        <li class="{f:if(condition: menu-item.active, then:'is-active')}" role="menuitem" aria-label="{menu-item.title}">
+                            <a href="{menu-item.link}" target="{menu-item.target}" title="{menu-item.title}">
+                                {menu-item.title}
+                            </a>
+                        </li>
+                    </f:for>
                 </ul>
-            </f:comment>
+            </f:if>
         </div>
     </div>
