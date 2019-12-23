@@ -24,6 +24,7 @@ page {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {
                 references.fieldName = media
+                as = pageMedia
             }
             20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             20 {

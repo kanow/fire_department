@@ -8,7 +8,9 @@
                 </f:if>
             </div>
             <div class="small-8 small-offset-1 large-offset-0 cell page__header--right">
-                <img src="assets/img/header-1.jpg" alt="advertisement for deep fried Twinkies">
+                <f:if condition="{pageMedia}">
+                    <f:image image="{pageMedia.0}" alt="{pageMedia.0.alternative}" />
+                </f:if>
             </div>
         </div>
         <!-- / logo -->

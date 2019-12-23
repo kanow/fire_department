@@ -6,6 +6,14 @@
             <authorEmail>captnnowi@gmx.de</authorEmail>
         </header>
         <body>
+
+            <trans-unit id="pageHeader.crop_variant.title">
+                <source>Crop page header</source>
+            </trans-unit>
+            <trans-unit id="pageHeader.crop_variant.default">
+                <source>Header Image</source>
+            </trans-unit>
+
         </body>
     </file>
 </xliff>
