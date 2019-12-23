@@ -1,17 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<nav class="main">
-    <ul>
+<nav class="main cell">
+    <ul class="dropdown menu horizontal expanded medium-text-left" data-dropdown-menu="" role="menubar">
         <f:for each="{menuMain}" as="menuMainItem">
-            <li class="{f:if(condition: menuMainItem.active, then:'active')}">
+            <li class="{f:if(condition: menuMainItem.active, then:'is-active')}
+            {f:if(condition: menuMainItem.children, then:' is-dropdown-submenu-parent')}
+             opens-right" role="menuitem" aria-haspopup="true" aria-label="{menuMainItem.title}">
                 <a href="{menuMainItem.link}" target="{menuMainItem.target}" title="{menuMainItem.title}">
                     {menuMainItem.title}
                 </a>
                 <f:if condition="{menuMainItem.children}">
-                    <ul>
+                    <ul class="submenu menu vertical">
                         <f:for each="{menuMainItem.children}" as="child">
-                            <li class="{f:if(condition: child.active, then:'active')}">
+                            <li class="{f:if(condition: child.active, then:'is-active')}">
                                 <a href="{child.link}" target="{child.target}" title="{child.title}">
                                     {child.title}
                                 </a>

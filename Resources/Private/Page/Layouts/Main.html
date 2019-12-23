@@ -5,13 +5,25 @@
 
     <div class="page__header"><f:render section="pageHeader" /></div>
 
-    <div class="menu__main"><f:render partial="Menu/Main" arguments="{menuMain:menuMain}" /></div>
+    <div class="grid-container fluid" id="main-menu">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x medium-8">
+                <f:render section="menu-main" />
+            </div>
+        </div>
+    </div>
 
-    <main class="page__content grid" id="content">
-        <f:render section="column0" />
-    </main>
+    <div class="grid-container main-content">
+        <div class="grid-x grid-padding-x">
+            <f:render section="column-0" />
+            <f:render section="column-2" />
+        </div>
+    </div>
 
-    <div class="page__footer"><f:render section="pageFooter" /></div>
+    <footer class="grid-container page__footer">
+        <f:render section="pageFooter" />
+    </footer>
+
 
 </div>
 
