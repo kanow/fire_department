@@ -28,5 +28,12 @@ page {
             alternative = Feuerwehr Logo
             width = 200
         }
+        pageMedia {
+            width = 780
+            height = 260c
+        }
+        pageMediaIfEmpty {
+            path = EXT:firebrigade_theme/Resources/Public/Build/img/header-1.jpg
+        }
     }
 }

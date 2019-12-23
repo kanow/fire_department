@@ -32,6 +32,10 @@ page {
                 includeSpacer = 1
                 as = menuMain
             }
+            30 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+            30 {
+                as = site
+            }
         }
         variables {
             currentPageId = TEXT
@@ -52,12 +56,21 @@ page {
                 }
                 ifEmpty = main
             }
+            pageMediaIfEmpty = IMG_RESOURCE
+            pageMediaIfEmpty {
+                file = {$page.settings.pageMediaIfEmpty.path}
+                stdWrap.if.isTrue = {$page.settings.pageMediaIfEmpty.path}
+            }
         }
         settings {
             pageLogo {
                 path = {$page.settings.pageLogo.path}
                 alternative = {$page.settings.pageLogo.alternative}
                 width = {$page.settings.pageLogo.width}
+            }
+            pageMedia {
+                width = {$page.settings.pageMedia.width}
+                height = {$page.settings.pageMedia.height}
             }
         }
     }
