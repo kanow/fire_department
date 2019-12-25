@@ -3,17 +3,21 @@
     @include xy-grid();
     .ce-bodytext {
       @include xy-cell-base();
-      @include xy-cell($size:12);
+      @include xy-cell($size:12, $gutters: 0);
       @include breakpoint(medium) {
         @include xy-cell($size:8, $gutters: 0);
       }
     }
     .ce-gallery {
       @include xy-cell-base();
-      @include xy-cell($size:12);
+      @include xy-cell($size:12, $gutters: 0);
     }
     &.ce-right {
+      .ce-bodytext {
+        @include flex-order(1);
+      }
       .ce-gallery {
+        @include flex-order(2);
         @include breakpoint(medium) {
           @include xy-cell($size:auto, $gutters: $global-margin*2, $gutter-position:'left');
         }
@@ -21,7 +25,7 @@
     }
     &.ce-left {
       .ce-bodytext {
-        @include flex-order(2)
+        @include flex-order(2);
       }
       .ce-gallery {
         @include breakpoint(medium) {
