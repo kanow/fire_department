@@ -11,15 +11,34 @@
   </head>
 <body>
 
-{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-{{> top-bar}}
+<div class="off-canvas-wrapper">
+  <div class="off-canvas position-right off-canvas-absolute" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- Close button -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <ul class="menu vertical">
+      <li><a href="#">Feurwehr Hauptwache 1</a></li>
+      <li><a href="#">Termine / Dienstabende</a></li>
+      <li><a href="#">Ausrüstung / Technik</a></li>
+      <li><a href="#">Feuerwehrsport</a></li>
+      <li class=""><a href="#">Wasserrettung</a></li>
+      <li><a href="#">Katastrophenschutz</a></li>
+    </ul>
+  </div>
 
-{{> header}}
-{{> menu-main}}
-{{!-- Pages you create in the src/pages/ folder are inserted here. --}}
-{{> body}}
+  <div class="off-canvas-content" data-off-canvas-content>
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> top-bar}}
 
-{{> footer}}
+    {{> header}}
+    {{> menu-main}}
+    {{!-- Pages you create in the src/pages/ folder are inserted here. --}}
+    {{> body}}
+
+    {{> footer}}
+  </div>
+</div>
 
 <script src="{{root}}assets/js/app.js"></script>
 </body>

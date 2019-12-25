@@ -1,6 +1,10 @@
 #main-menu {
   background-color: $secondary-color;
   margin-bottom: $global-padding * 2;
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+  }
 }
 .dropdown.menu {
   > li {
