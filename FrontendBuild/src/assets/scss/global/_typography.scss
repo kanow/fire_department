@@ -1,0 +1,10 @@
+$font-size-figcaption: rem-calc(14);
+
+@mixin fbt-figcaption() {
+  font-size: $font-size-figcaption;
+  font-style: italic;
+}
+
+figcaption {
+  @include fbt-figcaption();
+}
