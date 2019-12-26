@@ -1,0 +1,24 @@
+.last-pictures {
+  @include xy-grid;
+  &__big-image {
+    @include xy-cell($size:8,$vertical:1);
+    figure {
+      @include xy-cell;
+    }
+
+  }
+  &__small-images {
+    @include xy-grid;
+    @include xy-cell($size:4,$vertical:1);
+  }
+  &__small-image {
+    @include xy-cell($vertical:1);
+    position: relative;
+    &:last-child {
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
