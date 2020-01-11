@@ -1,10 +1,15 @@
-
 <header class="page__header-wrap grid-container fluid">
     <div class="grid-container">
         <!-- logo and ad break -->
         <div class="grid-x page__header">
             <div class="small-3 large-4 cell page__header--left">
+              {{#if logoHomelink}}
+                <a href="/" title="Home link">
+              {{/if}}
                 <img src="assets/img/FeuerwehrLogo.png" alt="Feuerwehr Logo" class="logo" width="200">
+              {{#if logoHomelink}}
+                </a>
+              {{/if}}
             </div>
             <div class="small-8 small-offset-1 large-offset-0 cell page__header--right">
                 <img src="assets/img/header-1.jpg" alt="advertisement for deep fried Twinkies">
