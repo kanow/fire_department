@@ -1,23 +1,39 @@
 .last-pictures {
-  @include xy-grid;
+  @include xy-grid();
+  @include xy-gutters($negative:1);
   &__big-image {
-    @include xy-cell($size:8,$vertical:1);
+    @include breakpoint('medium') {
+      @include xy-cell($vertical:1);
+      @include xy-cell-size(8);
+      @include xy-gutters($gutter-position:left);
+    }
     figure {
       @include xy-cell;
+      margin-bottom: $global-padding;
+      @include breakpoint('medium') {
+        margin-bottom: 0;
+      }
     }
-
   }
   &__small-images {
     @include xy-grid;
-    @include xy-cell($size:4,$vertical:1);
+    @include breakpoint('medium') {
+      @include xy-cell($vertical:1);
+      @include xy-cell-size(4);
+      @include xy-gutters($gutter-position:right, $negative: 1);
+    }
   }
   &__small-image {
     @include xy-cell($vertical:1);
-    position: relative;
-    &:last-child {
-      img {
-        position: absolute;
-        bottom: 0;
+    margin-bottom: $global-padding;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+      position: relative;
+      &:last-child {
+        img {
+          position: absolute;
+          bottom: 0;
+        }
       }
     }
   }
