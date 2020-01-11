@@ -7,3 +7,4 @@ config.yml
 *.swp
 .cache
 .idea
+package-lock.json
