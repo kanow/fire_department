@@ -1,8 +1,17 @@
 .title-bar {
   background-color: $primary-color;
+  min-height: rem-calc(50);
   .menu {
     a {
       color: #fff;
+    }
+  }
+  .menu-icon {
+    width: rem-calc(30);
+    height: rem-calc(22);
+    &:after {
+      height: 5px;
+      box-shadow: 0 9px 0 #fefefe, 0 18px 0 #fefefe;
     }
   }
 }
