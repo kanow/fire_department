@@ -1,4 +1,6 @@
+//noinspection SassScssResolvedByNameOnly,CssInvalidPropertyValue
 .title-bar {
+  //noinspection SassScssUnresolvedVariable
   background-color: $primary-color;
   min-height: rem-calc(50);
   .menu {
