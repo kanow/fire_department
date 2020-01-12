@@ -23,6 +23,9 @@ const config = func.loadConfig();
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
+// Define tasks
+let tasks = {};
+
 // Check for --production flag
 const PRODUCTION = !!(yargs.argv.production);
 
@@ -30,15 +33,6 @@ function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
   return yaml.load(ymlFile);
 }
-
-// Build the "dist" folder by running all of the below tasks
-// Sass must be run later so UnCSS can search for used classes in the others assets.
-gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide));
-
-// Build the site, run the server, and watch for file changes
-gulp.task('default',
-  gulp.series('build', server, watch));
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -192,3 +186,16 @@ function watch() {
   );
 
 }
+
+// Build the "dist" folder by running all of the below tasks
+// Sass must be run later so UnCSS can search for used classes in the others assets.
+// if build to TYPO3 package, no pages and no styleguide is needed
+tasks.build = settings.TYPO3
+	? gulp.series(clean, gulp.parallel(javascript, images, copy), sass)
+	: gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide);
+
+// Build the site, run the server, and watch for file changes
+gulp.task('default',
+	gulp.series(tasks.build, server, watch));
+
+module.exports = tasks;
