@@ -1,0 +1,22 @@
+.vehicles {
+  &__list {
+    &--item {
+      a {
+        @include xy-grid;
+      }
+      @include operations-listItem;
+    }
+    &--media {
+      @include xy-cell(2);
+      @include xy-gutters($gutter-type: padding, $gutter-position: top bottom);
+      @include operations-listItem-media();
+      figcaption {
+        @include operations-figcaption-list;
+      }
+    }
+    &--title {
+      @include xy-cell('auto');
+      @include xy-gutters($gutter-type: padding, $gutter-position: top bottom);
+    }
+  }
+}

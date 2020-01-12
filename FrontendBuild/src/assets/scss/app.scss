@@ -63,6 +63,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'global/typography';
+@import 'global/mixins';
 
 // firebrigade
 @import 'layout/header';
@@ -73,5 +75,5 @@
 @import 'layout/menu';
 @import 'layout/text-media';
 @import 'layout/last-pictures';
+@import 'layout/operations';
 
-@import 'global/typography';

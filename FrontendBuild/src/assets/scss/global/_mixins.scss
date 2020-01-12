@@ -1,0 +1,17 @@
+@mixin operations-listItem() {
+  background-color: $color-background-list;
+  margin-bottom: $global-padding;
+  a {
+    color: inherit;
+    &:hover {
+      background-color: darken($color-background-list,5) ;
+    }
+  }
+}
+@mixin operations-listItem-media($align: 'center') {
+  text-align: #{$align};
+}
+
+@mixin operations-figcaption-list() {
+  font-size: 60%;
+}
