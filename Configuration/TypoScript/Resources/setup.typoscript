@@ -1,5 +1,6 @@
 page {
     includeCSS {
+        operations >
         firebrigade_theme_layout = EXT:firebrigade_theme/Resources/Public/Build/css/app.css
     }
 
