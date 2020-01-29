@@ -16,3 +16,7 @@
 @mixin operations-figcaption-list() {
   font-size: 60%;
 }
+@mixin operations-listItem-meta() {
+  font-size: .8em;
+  color: $black;
+}

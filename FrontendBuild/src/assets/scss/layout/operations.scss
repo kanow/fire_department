@@ -17,3 +17,25 @@
     }
   }
 }
+
+.operations {
+  &__list {
+    &--item {
+      @include operations-listItem;
+    }
+    &--media {
+      @include xy-cell($size:3, $gutter-position: bottom left right);
+    }
+    &--title {
+      @include xy-cell($size:9, $gutter-position: bottom left right );
+    }
+    &--meta {
+      @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
+      @include operations-listItem-meta();
+    }
+    &--teaser {
+      @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
+      background-color: $medium-gray;
+    }
+  }
+}
