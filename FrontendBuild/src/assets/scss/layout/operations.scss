@@ -1,9 +1,6 @@
 .vehicles {
   &__list {
     &--item {
-      a {
-        @include xy-grid;
-      }
       @include operations-listItem;
     }
     &--media {

@@ -2,6 +2,7 @@
   background-color: $color-background-list;
   margin-bottom: $global-padding;
   a {
+    @include xy-grid;
     color: inherit;
     &:hover {
       background-color: darken($color-background-list,5) ;
