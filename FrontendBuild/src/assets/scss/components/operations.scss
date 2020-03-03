@@ -24,10 +24,10 @@
       @include operations-listItem;
     }
     &--media {
-      @include xy-cell($size:3, $gutter-position: bottom left right);
+      @include xy-cell($size:1, $gutter-position: bottom left right);
     }
     &--title {
-      @include xy-cell($size:9, $gutter-position: bottom left right );
+      @include xy-cell($size:11, $gutter-position: bottom left right );
     }
     &--meta {
       @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
@@ -35,7 +35,7 @@
     }
     &--teaser {
       @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
-      background-color: $medium-gray;
+      //background-color: lighten(get-color(third), 30);
     }
   }
 }
