@@ -115,5 +115,8 @@
         margin-bottom: $global-padding * 2;
       }
     }
+    &--backlink {
+      @include xy-cell(full);
+    }
   }
 }
