@@ -35,7 +35,6 @@
     }
     &--teaser {
       @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
-      //background-color: lighten(get-color(third), 30);
     }
   }
 }
@@ -48,25 +47,10 @@
       line-height: 1.2em;
     }
     &--main {
-      //@include xy-cell-base();
       @include xy-cell($size:12);
       @include breakpoint(medium) {
         @include xy-cell($size:8, $gutter-position: right);
         @include xy-gutters($gutter-position: right);
-      }
-      &-info {
-        margin-bottom: $global-padding;
-        background-color: $light-gray;
-        @include xy-grid();
-        @include xy-cell(full, $gutter-type: none);
-        padding-top: $global-padding;
-        padding-left: $global-padding;
-        padding-right: $global-padding;
-        h3 {
-          border-bottom: 1px solid $prototype-border-color;
-          display: block;
-          width: 100%;
-        }
       }
     }
     &--media {
@@ -110,9 +94,18 @@
       &-meta {
         background-color: $light-gray;
         @include xy-grid();
-        @include xy-cell(full, $gutter-type: none);
-        padding: $global-padding;
-        h4 {
+        @include xy-cell(full, $gutter-type: padding, $gutter-position: left top right);
+        h3, h4 {
+          border-bottom: 1px solid $prototype-border-color;
+          display: block;
+          width: 100%;
+        }
+      }
+      &-info {
+        background-color: $light-gray;
+        @include xy-grid();
+        @include xy-cell(full, $gutter-type: padding);
+        h3, h4 {
           border-bottom: 1px solid $prototype-border-color;
           display: block;
           width: 100%;
