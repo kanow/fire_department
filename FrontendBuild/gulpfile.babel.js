@@ -152,10 +152,12 @@ function server(done) {
 			port: config.PORT,
 			host: func.getWatchHost(),
 			open: "external",
-			// https: {
-			// 	key: "certs/local_development.key",
-			// 	cert: "certs/local_development.pem",
-			// },
+			// comment next lines if no ssl certificate is used
+			https: {
+				key: config.WATCH.ssl.key,
+				cert: config.WATCH.ssl.cert,
+			},
+			// ssl certificate used -- end --
 		}, done)
 		: browser.init({
 			server: config.PATHS.dist[settings.buildTarget],

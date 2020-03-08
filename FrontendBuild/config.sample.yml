@@ -44,6 +44,13 @@ WATCH:
           - "../../public/typo3conf/ext/%EXTENSION%/Resources/Private/**"
     host: www.projectdomain.de.lan
     protocol: https
+    # has to be generated with mkcert by yourself before using. Excute following commands here in those folder
+    # 1: mkcert -install
+    # 2: mkcert "your-domain.ddev.site"
+    # Add filenames for key and cert
+    ssl:
+      key: "certs/replace-filename-here.ddev.site-key.pem"
+      cert: "certs/replace-filename-here.ddev.site.pem"
 
 # Add additional sites for proxying when in TYPO3 mode
 # You can access them using "yarn run start --typo3 --site=foo"
