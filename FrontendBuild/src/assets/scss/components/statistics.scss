@@ -1,0 +1,14 @@
+.operations {
+  &__statistics {
+    &--summary {
+      width: auto;
+      min-width: 30%;
+      th {
+        border-right: $table-border;
+      }
+    }
+    &--data {
+      @include table-scroll();
+    }
+  }
+}
