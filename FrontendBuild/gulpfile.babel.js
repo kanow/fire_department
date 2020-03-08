@@ -12,7 +12,6 @@ import fs            from 'fs';
 import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
-import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
 
 // Get functions and load configuration
