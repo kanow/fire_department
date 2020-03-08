@@ -39,3 +39,88 @@
     }
   }
 }
+
+.operations {
+  &__show {
+    @include xy-grid();
+    @include xy-gutters($negative: 1);
+    &--header {
+      line-height: 1.2em;
+    }
+    &--main {
+      //@include xy-cell-base();
+      @include xy-cell($size:12);
+      @include breakpoint(medium) {
+        @include xy-cell($size:8, $gutter-position: right);
+        @include xy-gutters($gutter-position: right);
+      }
+      &-info {
+        margin-bottom: $global-padding;
+        background-color: $light-gray;
+        @include xy-grid();
+        @include xy-cell(full, $gutter-type: none);
+        padding-top: $global-padding;
+        padding-left: $global-padding;
+        padding-right: $global-padding;
+        h3 {
+          border-bottom: 1px solid $prototype-border-color;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    &--media {
+      margin-bottom: $global-padding;
+      &-figure-wrap {
+        @include xy-grid();
+        @include xy-gutters($negative: 1);
+      }
+      figure {
+        @include xy-cell(6);
+        @include breakpoint(medium) {
+          @include xy-cell(4, $gutter-position: top bottom left right);
+        }
+        @include breakpoint(large) {
+          @include xy-cell(3, $gutter-position: top bottom left right);
+        }
+      }
+    }
+    &--aside {
+      @include xy-cell-base();
+      @include xy-cell($size: 12);
+      @include breakpoint(medium) {
+        @include xy-cell($size: auto, $gutter-type: padding, $gutter-position: left);
+        border-left: $prototype-border-width solid $prototype-border-color;
+      }
+      &-number {
+        @include xy-grid();
+        background-color: get-color(third);
+        .text {
+          @include xy-cell(auto);
+          padding: $global-padding / 2;
+        }
+        .number {
+          background-color: $primary-color;
+          color: $white;
+          font-weight: $global-weight-bold;
+          @include xy-cell(3, $gutter-type: none);
+          padding: $global-padding / 2;
+        }
+      }
+      &-meta {
+        background-color: $light-gray;
+        @include xy-grid();
+        @include xy-cell(full, $gutter-type: none);
+        padding: $global-padding;
+        h4 {
+          border-bottom: 1px solid $prototype-border-color;
+          display: block;
+          width: 100%;
+        }
+      }
+      &-map {
+        margin-bottom: $global-padding * 2;
+      }
+    }
+  }
+}
