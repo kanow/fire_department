@@ -6,5 +6,5 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:firebrigade_theme/Configuration/TsConfig/Page/BackendLayouts" extensions="page.typoscript">
 
 tx_news.templateLayouts {
-    short-list = Kleine Liste
+    Short = Kleine Liste
 }
