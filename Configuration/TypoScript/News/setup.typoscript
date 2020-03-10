@@ -2,4 +2,11 @@ plugin.tx_news {
     settings {
         defaultDetailPid = 32
     }
+    list {
+        paginate {
+            itemsPerPage = 3
+            insertAbove = 0
+            #templatePath =
+        }
+    }
 }
