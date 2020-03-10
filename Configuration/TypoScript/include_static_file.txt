@@ -1,6 +1,7 @@
 EXT:fluid_styled_content/Configuration/TypoScript,
 
 EXT:operations/Configuration/TypoScript,
+EXT:news/Configuration/TypoScript,
 
 EXT:firebrigade_theme/Configuration/TypoScript/Config,
 EXT:firebrigade_theme/Configuration/TypoScript/Page,
@@ -8,4 +9,5 @@ EXT:firebrigade_theme/Configuration/TypoScript/Resources,
 EXT:firebrigade_theme/Configuration/TypoScript/Helper,
 EXT:firebrigade_theme/Configuration/TypoScript/Menu/Main,
 EXT:firebrigade_theme/Configuration/TypoScript/Menu/Language,
+EXT:firebrigade_theme/Configuration/TypoScript/News,
 
