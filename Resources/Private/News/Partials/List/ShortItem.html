@@ -11,7 +11,7 @@
     <n:excludeDisplayedNews newsItem="{newsItem}"/>
 
     <!-- header -->
-    <div class="header">
+    <div class="news__listShort--header">
         <span class="news__listShort--date">
             <time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
                 <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
@@ -42,7 +42,7 @@
             </f:if>
         </n:removeMediaTags>
 
-        <n:link newsItem="{newsItem}" settings="{settings}" class="more" title="{newsItem.title}">
+        <n:link newsItem="{newsItem}" settings="{settings}" class="news__listShort--more" title="{newsItem.title}">
             <f:translate key="more-link"/>
         </n:link>
     </div>
