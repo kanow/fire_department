@@ -25,5 +25,53 @@
         color: $secondary-color;
       }
     }
+    &--meta {
+      //color: $dark-gray;
+    }
+    &--article {
+      background-color: $light-gray;
+      margin-bottom: $global-padding;
+      padding: $global-padding;
+    }
+    &--grid {
+      @include xy-grid();
+      @include breakpoint(medium) {
+        @include xy-gutters($negative: 1);
+      }
+      &-media {
+        margin-bottom: $global-padding;
+        @include breakpoint(medium) {
+          @include xy-cell($size:3);
+        }
+      }
+      &-teaser {
+        @include breakpoint(medium) {
+          @include xy-cell($size:8);
+        }
+      }
+    }
+  }
+  .page-navigation {
+    @include pagination-container;
+    ul {
+      padding-left: 0;
+      margin-left: 0;
+    }
+    li {
+      @include pagination-ellipsis;
+      margin-bottom: $global-padding / 2;
+    }
+    .current {
+      @include pagination-item-current;
+    }
+    .previous, .next {
+      border: $prototype-border-width solid $prototype-border-color;
+      &:hover {
+        background-color: $light-gray;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
   }
 }

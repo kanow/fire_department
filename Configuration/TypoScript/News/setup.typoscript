@@ -1,12 +1,21 @@
 plugin.tx_news {
     settings {
         defaultDetailPid = 32
-    }
-    list {
-        paginate {
-            itemsPerPage = 3
-            insertAbove = 0
-            #templatePath =
+        list {
+            paginate {
+                itemsPerPage = 3
+                insertAbove = 0
+                #templatePath =
+            }
+
+
+            # media configuration
+            media {
+                image {
+                    maxWidth = 250
+                    maxHeight = 350
+                }
+            }
         }
     }
     _LOCAL_LANG {
