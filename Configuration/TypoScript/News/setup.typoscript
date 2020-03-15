@@ -5,11 +5,7 @@ plugin.tx_news {
             paginate {
                 itemsPerPage = 3
                 insertAbove = 0
-                #templatePath =
             }
-
-
-            # media configuration
             media {
                 image {
                     maxWidth = 250
