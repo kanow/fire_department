@@ -1,17 +1,16 @@
 .news {
   &__list {
     &Short {
+      &--article {
+        margin-bottom: $global-padding * 2;
+      }
       &--header {
-        margin-bottom: $global-padding;
+        margin-bottom: $global-padding / 3;
       }
       &--teaser {
         p {
           margin-bottom: 0;
         }
-      }
-      &--more {
-        display: block;
-        text-align: right;
       }
       h3 {
         margin-bottom: 0;
@@ -19,7 +18,11 @@
       &--author {
         display: block;
         text-align: right;
-        border-top: $prototype-border-width solid $prototype-border-color
+        border-top: $prototype-border-width solid $prototype-border-color;
+        color: $dark-gray;
+      }
+      &--date {
+        color: $secondary-color;
       }
     }
   }

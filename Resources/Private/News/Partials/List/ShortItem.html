@@ -34,18 +34,21 @@
         <n:removeMediaTags>
             <f:if condition="{newsItem.teaser}">
                 <f:then>
-                    <div itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</div>
+                    <p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}<f:render section="more-link" arguments="{newsItem:newsItem}" /></p>
                 </f:then>
                 <f:else>
-                    <div itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</div>
+                    <p itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}<f:render section="more-link" arguments="{newsItem:newsItem}" /></p>
                 </f:else>
             </f:if>
         </n:removeMediaTags>
-
-        <n:link newsItem="{newsItem}" settings="{settings}" class="news__listShort--more" title="{newsItem.title}">
-            <f:translate key="more-link"/>
-        </n:link>
     </div>
 
 </div>
+
+<f:section name="more-link">
+    <n:link newsItem="{newsItem}" settings="{settings}" class="news__listShort--more" title="{newsItem.title}">
+        [<f:translate key="more-link" />]
+    </n:link>
+</f:section>
+
 </html>
