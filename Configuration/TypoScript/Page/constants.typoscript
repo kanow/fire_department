@@ -31,7 +31,7 @@ firebrigade {
             }
             pageMedia {
                 width = 780
-                height = 260c
+                height = 290c
             }
             pageMediaIfEmpty {
                 path = EXT:firebrigade_theme/Resources/Public/Build/img/header-1.jpg

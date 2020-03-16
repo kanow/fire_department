@@ -1,39 +1,33 @@
-<header class="page__header-wrap grid-container fluid">
-    <div class="grid-container">
-        <!-- logo -->
-        <div class="grid-x page__header">
-            <div class="small-3 large-4 cell page__header--left">
-                <f:if condition="{settings.pageLogo.path}">
-                   <f:if condition="{site.rootPageId} != {currentPageId}">
-                       <f:then>
-                           <f:link.page pageUid="{site.rootPageId}" absolute="1" class="homelink">
-                               <f:render section="logo" />
-                           </f:link.page>
-                       </f:then>
-                       <f:else>
+<header class="page__header grid-container">
+    <div class="page__header--left">
+            <f:if condition="{settings.pageLogo.path}">
+               <f:if condition="{site.rootPageId} != {currentPageId}">
+                   <f:then>
+                       <f:link.page pageUid="{site.rootPageId}" absolute="1" class="homelink">
                            <f:render section="logo" />
-                       </f:else>
-                   </f:if>
-                </f:if>
-            </div>
-            <div class="small-8 small-offset-1 large-offset-0 cell page__header--right">
-                <f:if condition="{pageMedia}">
-                    <f:then>
-                        <f:image image="{pageMedia.0}" alt="{pageMedia.0.alternative}" width="{settings.pageMedia.width}"/>
-                    </f:then>
-                    <f:else>
-                        <f:if condition="{pageMediaIfEmpty}">
-                            <f:image src="{pageMediaIfEmpty}" alt="{setttings.pageMediaIfEmpty.alternative}" width="{settings.pageMedia.width}" height="{settings.pageMedia.height}" />
-                    </f:if>
-                    </f:else>
-                </f:if>
-            </div>
+                       </f:link.page>
+                   </f:then>
+                   <f:else>
+                       <f:render section="logo" />
+                   </f:else>
+               </f:if>
+            </f:if>
         </div>
-        <!-- / logo -->
-    </div>
+    <div class="page__header--right">
+            <f:if condition="{pageMedia}">
+                <f:then>
+                    <f:image image="{pageMedia.0}" alt="{pageMedia.0.alternative}" width="{settings.pageMedia.width}"/>
+                </f:then>
+                <f:else>
+                    <f:if condition="{pageMediaIfEmpty}">
+                        <f:image src="{pageMediaIfEmpty}" alt="{setttings.pageMediaIfEmpty.alternative}" width="{settings.pageMedia.width}" height="{settings.pageMedia.height}" />
+                </f:if>
+                </f:else>
+            </f:if>
+        </div>
 </header>
 
 
 <f:section name="logo">
-    <f:image src="{settings.pageLogo.path}" class="lgoo" alt="{setttings.pageLogo.alternative}" width="{settings.pageLogo.width}" />
+    <f:image src="{settings.pageLogo.path}" class="logo" alt="{setttings.pageLogo.alternative}" width="{settings.pageLogo.width}" />
 </f:section>

@@ -1,20 +1,48 @@
 .page__header-wrap {
   //noinspection SassScssUnresolvedVariable
-  background: repeating-linear-gradient(
-    to right,
-    #fff,
-    #fff 130px,
-    $primary-color 0px,
-    $primary-color 160px
-  );
+  //background: repeating-linear-gradient(
+  //  to right,
+  //  #fff,
+  //  #fff 130px,
+  //  $primary-color 0px,
+  //  $primary-color 160px
+  //);
 }
 .page {
   &__header {
+    margin-bottom: $global-padding;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
+    @include xy-grid();
     &--left {
+      position: absolute;
+      top:0;
+      left: $global-padding * 2;
+      max-width: 25%;
+      @include breakpoint(medium) {
+        position: initial;
+        max-width: initial;
+        border-left: 1px solid $secondary-color;
+        @include xy-cell(4, $gutter-type:padding);
+      }
       text-align: center;
       & .logo {
-        margin-top:1em;
+        margin-top:$global-padding;
+        margin-bottom:$global-padding;
         clear: both;
+        max-height: 180px;
+        width: auto;
+        @include breakpoint(medium) {
+          max-height: initial;
+          max-width: 70%;
+        }
+      }
+    }
+    &--right {
+      @include breakpoint(medium) {
+        //@include xy-cell-offset(4);
+        @include xy-cell(8, $gutter-type:none);
       }
     }
   }
