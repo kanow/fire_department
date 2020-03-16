@@ -10,8 +10,20 @@
 }
 .page {
   &__header {
+    &:after {
+      content: "";
+      width: 110%;
+      display: block;
+      height: 5px;
+      background-color: $primary-color;
+      margin-left: -$global-padding;
+      margin-right: -$global-padding;
+      @include breakpoint(large) {
+        display: none;
+      }
+    }
     margin-bottom: $global-padding;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       margin-bottom: 0;
     }
     @include xy-grid();
