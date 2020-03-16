@@ -8,6 +8,19 @@
 
 <f:layout name="{backendLayout}" />
 
+<f:section name="top-bar">
+    <div data-responsive-toggle="main-menu" data-hide-for="large" data-sticky-container="" style="">
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large" data-sticky="" data-options="marginTop:0;" style="">
+            <div class="title-bar-left">
+
+            </div>
+            <div class="title-bar-right">
+                <button class="menu-icon" type="button" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas"><span class="show-for-sr"><f:translate key="offCanvas.button.text">Menu</f:translate></span></button>
+            </div>
+        </div>
+    </div>
+</f:section>
+
 <f:section name="pageHeader">
     <f:render partial="PageHeader" arguments="{_all}" />
 </f:section>

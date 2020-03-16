@@ -6,6 +6,11 @@
             <authorEmail>captnnowi@gmx.de</authorEmail>
         </header>
         <body>
+
+            <trans-unit id="offCanvas.button.text">
+                <source>Open menu</source>
+            </trans-unit>
+
         </body>
     </file>
 </xliff>
