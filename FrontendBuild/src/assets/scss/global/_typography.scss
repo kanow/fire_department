@@ -8,3 +8,7 @@ $font-size-figcaption: rem-calc(14);
 figcaption {
   @include fbt-figcaption();
 }
+
+h1, h2, h3, h4 {
+  word-break: break-word;
+}

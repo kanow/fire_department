@@ -24,10 +24,18 @@
       @include operations-listItem;
     }
     &--media {
-      @include xy-cell($size:2, $gutter-position: bottom left right);
+      @include xy-cell();
+      @include breakpoint(medium) {
+        @include xy-cell($size:2, $gutter-position: bottom left right);
+        order: 1;
+      }
     }
     &--title {
-      @include xy-cell($size:10, $gutter-position: bottom left right );
+      @include xy-cell();
+      @include breakpoint(medium) {
+        @include xy-cell($size:10, $gutter-position: bottom left right );
+        order: 2;
+      }
     }
     &--meta {
       @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
@@ -35,6 +43,7 @@
     }
     &--teaser {
       @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
+      order: 3;
     }
   }
 }
