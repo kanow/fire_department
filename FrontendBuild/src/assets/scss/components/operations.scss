@@ -129,3 +129,25 @@
     }
   }
 }
+
+.f3-widget-paginator {
+  @include pagination-container;
+  padding-left: 0;
+  margin-left: 0;
+  li {
+    @include pagination-ellipsis;
+    margin-bottom: $global-padding / 2;
+  }
+  .current {
+    @include pagination-item-current;
+  }
+  .previous, .next {
+    border: $prototype-border-width solid $prototype-border-color;
+    &:hover {
+      background-color: $light-gray;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
