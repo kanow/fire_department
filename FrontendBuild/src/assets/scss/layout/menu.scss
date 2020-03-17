@@ -35,3 +35,14 @@
     }
   }
 }
+
+.mobile {
+  .menu {
+    li {
+      a {
+        color: $white;
+        background-color: $primary-color;
+      }
+    }
+  }
+}

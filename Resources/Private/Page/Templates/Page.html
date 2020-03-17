@@ -8,6 +8,16 @@
 
 <f:layout name="{backendLayout}" />
 
+<f:section name="off-canvas">
+    <div class="off-canvas position-right off-canvas-absolute" id="offCanvas" data-off-canvas data-transition="overlap">
+        <!-- Close button -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <f:render partial="Menu/Mobile" arguments="{menuMobile:menuMobile}" />
+    </div>
+</f:section>
+
 <f:section name="top-bar">
     <div data-responsive-toggle="main-menu" data-hide-for="large" data-sticky-container="" style="">
         <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large" data-sticky="" data-options="marginTop:0;" style="">

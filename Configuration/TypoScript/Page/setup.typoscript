@@ -42,6 +42,11 @@ page {
             30 {
                 as = site
             }
+            35 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            35 {
+                levels = 3
+                as = menuMobile
+            }
         }
         variables {
             currentPageId = TEXT

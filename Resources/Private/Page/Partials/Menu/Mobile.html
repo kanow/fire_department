@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<nav class="mobile">
+    <ul class="menu vertical">
+        <f:for each="{menuMobile}" as="menuItem">
+            <li class="{f:if(condition: menuItem.active, then:'is-active')}"
+                role="menuitem" aria-haspopup="true" aria-label="{menuItem.title}">
+                <a href="{menuItem.link}" target="{menuItem.target}" title="{menuItem.title}">
+                    {menuItem.title}
+                </a>
+                <f:if condition="{menuItem.children}">
+                    <f:render section="submenu" arguments="{children:menuItem.children}" />
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</nav>
+
+<f:section name="submenu">
+    <ul class="menu vertical">
+        <f:for each="{children}" as="child">
+            <li class="{f:if(condition: child.active, then:'is-active')}">
+                <a href="{child.link}" target="{child.target}" title="{child.title}">
+                    {child.title}
+                </a>
+                <f:if condition="{child.children}">
+                    <f:render section="submenu" arguments="{children:child.children}" />
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:section>
+
+</html>
