@@ -1,0 +1,7 @@
+.close-button {
+  color: $white;
+   }
+[data-whatinput='mouse'] .close-button {
+  outline: 0; }
+.close-button:hover, .close-button:focus {
+  color: $light-gray; }

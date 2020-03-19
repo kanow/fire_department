@@ -2,10 +2,9 @@
       data-namespace-typo3-fluid="true">
 
 <nav class="mobile">
-    <ul class="menu vertical">
+    <ul class="vertical menu accordion-menu" data-accordion-menu="" data-submenu-toggle="true">
         <f:for each="{menuMobile}" as="menuItem">
-            <li class="{f:if(condition: menuItem.active, then:'is-active')}"
-                role="menuitem" aria-haspopup="true" aria-label="{menuItem.title}">
+            <li class="{f:if(condition: menuItem.active, then:'is-active')}" aria-label="{menuItem.title}">
                 <a href="{menuItem.link}" target="{menuItem.target}" title="{menuItem.title}">
                     {menuItem.title}
                 </a>
@@ -18,9 +17,9 @@
 </nav>
 
 <f:section name="submenu">
-    <ul class="menu vertical">
+    <ul class="menu vertical nested">
         <f:for each="{children}" as="child">
-            <li class="{f:if(condition: child.active, then:'is-active')}">
+            <li class="{f:if(condition: child.active, then:'is-active')}" aria-label="{menuItem.title}">
                 <a href="{child.link}" target="{child.target}" title="{child.title}">
                     {child.title}
                 </a>
