@@ -6,6 +6,6 @@ config {
     removeDefaultJS = 0
     admPanel = 1
     prefixLocalAnchors = all
-    headerComment = TYPO3 theme for firebrigade websites by Karsten Nowak
+    headerComment = TYPO3 theme for fire department websites by Karsten Nowak
     sendCacheHeaders = 1
 }

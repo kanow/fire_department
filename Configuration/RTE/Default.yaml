@@ -5,7 +5,7 @@ imports:
 
 editor:
     config:
-        contentsCss: "EXT:firebrigade_theme/Resources/Public/Css/rte.css"
+        contentsCss: "EXT:fire_department/Resources/Public/Css/rte.css"
 
         stylesSet:
             - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }

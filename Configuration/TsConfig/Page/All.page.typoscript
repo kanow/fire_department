@@ -1,9 +1,9 @@
 #
-# PageTS for FirebrigadeTheme
+# PageTS for FireDepartment
 #
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:firebrigade_theme/Configuration/TsConfig/Page/TCEFORM.page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:firebrigade_theme/Configuration/TsConfig/Page/TCEMAIN.page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:firebrigade_theme/Configuration/TsConfig/Page/BackendLayouts" extensions="page.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fire_department/Configuration/TsConfig/Page/TCEFORM.page.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fire_department/Configuration/TsConfig/Page/TCEMAIN.page.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fire_department/Configuration/TsConfig/Page/BackendLayouts" extensions="page.typoscript">
 
 tx_news.templateLayouts {
     Short = Kleine Liste

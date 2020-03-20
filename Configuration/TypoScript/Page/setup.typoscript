@@ -1,24 +1,24 @@
 page = PAGE
 page {
     typeNum = 0
-    shortcutIcon = EXT:firebrigade_theme/Resources/Public/Icons/favicon.ico
+    shortcutIcon = EXT:fire_department/Resources/Public/Icons/favicon.ico
 
     10 = FLUIDTEMPLATE
     10 {
         templateName = Page
-        extbase.controllerExtensionName = FirebrigadeTheme
+        extbase.controllerExtensionName = FireDepartment
 
         templateRootPaths {
-            0 = EXT:firebrigade_theme/Resources/Private/Page/Templates/
-            1 = {$firebrigade.page.fluidtemplate.templateRootPath}
+            0 = EXT:fire_department/Resources/Private/Page/Templates/
+            1 = {$fire_department.page.fluidtemplate.templateRootPath}
         }
         partialRootPaths {
-            0 = EXT:firebrigade_theme/Resources/Private/Page/Partials/
-            1 = {$firebrigade.page.fluidtemplate.partialRootPath}
+            0 = EXT:fire_department/Resources/Private/Page/Partials/
+            1 = {$fire_department.page.fluidtemplate.partialRootPath}
         }
         layoutRootPaths {
-            0 = EXT:firebrigade_theme/Resources/Private/Page/Layouts/
-            1 = {$firebrigade.page.fluidtemplate.layoutRootPath}
+            0 = EXT:fire_department/Resources/Private/Page/Layouts/
+            1 = {$fire_department.page.fluidtemplate.layoutRootPath}
         }
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -34,7 +34,7 @@ page {
             25 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             25 {
                 special = directory
-                special.value = {$firebrigade.page.settings.pids.menu.footer}
+                special.value = {$fire_department.page.settings.pids.menu.footer}
                 levels = 1
                 as = menuFooter
             }
@@ -69,40 +69,40 @@ page {
             }
             pageMediaIfEmpty = IMG_RESOURCE
             pageMediaIfEmpty {
-                file = {$firebrigade.page.settings.pageMediaIfEmpty.path}
-                stdWrap.if.isTrue = {$firebrigade.page.settings.pageMediaIfEmpty.path}
+                file = {$fire_department.page.settings.pageMediaIfEmpty.path}
+                stdWrap.if.isTrue = {$fire_department.page.settings.pageMediaIfEmpty.path}
             }
         }
         settings {
             pageLogo {
-                path = {$firebrigade.page.settings.pageLogo.path}
-                alternative = {$firebrigade.page.settings.pageLogo.alternative}
-                width = {$firebrigade.page.settings.pageLogo.width}
+                path = {$fire_department.page.settings.pageLogo.path}
+                alternative = {$fire_department.page.settings.pageLogo.alternative}
+                width = {$fire_department.page.settings.pageLogo.width}
             }
             pageMedia {
-                width = {$firebrigade.page.settings.pageMedia.width}
-                height = {$firebrigade.page.settings.pageMedia.height}
+                width = {$fire_department.page.settings.pageMedia.width}
+                height = {$fire_department.page.settings.pageMedia.height}
             }
         }
     }
 
     meta {
-        viewport = {$firebrigade.page.meta.viewport}
-        robots = {$firebrigade.page.meta.robots}
-        apple-mobile-web-app-capable = {$firebrigade.page.meta.apple-mobile-web-app-capable}
-        description = {$firebrigade.page.meta.description}
+        viewport = {$fire_department.page.meta.viewport}
+        robots = {$fire_department.page.meta.robots}
+        apple-mobile-web-app-capable = {$fire_department.page.meta.apple-mobile-web-app-capable}
+        description = {$fire_department.page.meta.description}
         description {
             override.field = description
         }
-        author = {$firebrigade.page.meta.author}
+        author = {$fire_department.page.meta.author}
         author {
             override.field = author
         }
-        keywords = {$firebrigade.page.meta.keywords}
+        keywords = {$fire_department.page.meta.keywords}
         keywords {
             override.field = keywords
         }
-        X-UA-Compatible = {$firebrigade.page.meta.compatible}
+        X-UA-Compatible = {$fire_department.page.meta.compatible}
         X-UA-Compatible {
             attribute = http-equiv
         }
@@ -116,7 +116,7 @@ page {
             attribute = property
             data = TSFE:tmpl|setup|sitetitle
         }
-        og:description = {$firebrigade.page.meta.description}
+        og:description = {$fire_department.page.meta.description}
         og:description {
             attribute = property
             field = description

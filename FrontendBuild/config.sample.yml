@@ -2,7 +2,7 @@
 PORT: 8000
 
 # TYPO3 extension name of project
-EXTENSION: "firebrigade_theme"
+EXTENSION: "fire_department"
 
 # UnCSS will use these settings
 UNCSS_OPTIONS:

@@ -1,10 +1,10 @@
 page {
     includeCSS {
         operations >
-        firebrigade_theme_layout = EXT:firebrigade_theme/Resources/Public/Build/css/app.css
+        fire_department_layout = EXT:fire_department/Resources/Public/Build/css/app.css
     }
 
     includeJSFooter {
-        firebrigade_theme_scripts = EXT:firebrigade_theme/Resources/Public/Build/js/app.js
+        fire_department_scripts = EXT:fire_department/Resources/Public/Build/js/app.js
     }
 }

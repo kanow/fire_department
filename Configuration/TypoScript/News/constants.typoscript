@@ -1,8 +1,8 @@
 plugin.tx_news {
     view {
-        templateRootPath = EXT:firebrigade_theme/Resources/Private/News/Templates/
-        partialRootPath = EXT:firebrigade_theme/Resources/Private/News/Partials/
-        layoutRootPath = EXT:firebrigade_theme/Resources/Private/News/Layouts/
+        templateRootPath = EXT:fire_department/Resources/Private/News/Templates/
+        partialRootPath = EXT:fire_department/Resources/Private/News/Partials/
+        layoutRootPath = EXT:fire_department/Resources/Private/News/Layouts/
     }
     settings {
         cssFile =

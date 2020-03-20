@@ -3,9 +3,9 @@
 ##############################
 styles {
     templates {
-        layoutRootPath = EXT:firebrigade_theme/Resources/Private/Content/Layouts/
-        partialRootPath = EXT:firebrigade_theme/Resources/Private/Content/Partials/
-        templateRootPath = EXT:firebrigade_theme/Resources/Private/Content/Templates/
+        layoutRootPath = EXT:fire_department/Resources/Private/Content/Layouts/
+        partialRootPath = EXT:fire_department/Resources/Private/Content/Partials/
+        templateRootPath = EXT:fire_department/Resources/Private/Content/Templates/
     }
 }
 

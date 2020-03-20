@@ -21,4 +21,4 @@ call_user_func(function ($extensionKey) {
         ]
     );
 
-}, 'firebrigade_theme');
+}, 'fire_department');

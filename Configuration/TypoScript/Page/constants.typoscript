@@ -1,12 +1,12 @@
 ############
 ### PAGE ###
 ############
-firebrigade {
+fire_department {
     page {
         fluidtemplate {
-            layoutRootPath = EXT:firebrigade_theme/Resources/Private/Page/Layouts/
-            partialRootPath = EXT:firebrigade_theme/Resources/Private/Page/Partials/
-            templateRootPath = EXT:firebrigade_theme/Resources/Private/Page/Templates/
+            layoutRootPath = EXT:fire_department/Resources/Private/Page/Layouts/
+            partialRootPath = EXT:fire_department/Resources/Private/Page/Partials/
+            templateRootPath = EXT:fire_department/Resources/Private/Page/Templates/
         }
         meta {
             description =
@@ -25,7 +25,7 @@ firebrigade {
         }
         settings {
             pageLogo {
-                path = EXT:firebrigade_theme/Resources/Public/Build/img/FeuerwehrLogo.png
+                path = EXT:fire_department/Resources/Public/Build/img/FeuerwehrLogo.png
                 alternative = Feuerwehr Logo
                 width = 200
             }
@@ -34,7 +34,7 @@ firebrigade {
                 height = 290c
             }
             pageMediaIfEmpty {
-                path = EXT:firebrigade_theme/Resources/Public/Build/img/header-1.jpg
+                path = EXT:fire_department/Resources/Public/Build/img/header-1.jpg
             }
             pids {
                 menu {

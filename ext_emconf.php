@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Extension Manager/Repository config file for ext "firebrigade_theme".
+ * Extension Manager/Repository config file for ext "fire_department".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Firebrigade Theme',
+    'title' => 'Fire department Theme',
     'description' => 'Theme for fire brigade websites with TYPO3',
     'category' => 'theme',
     'constraints' => [
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'Kanow\\FirebrigadeTheme\\' => 'Classes'
+            'Kanow\\FireDepartment\\' => 'Classes'
         ],
     ],
     'state' => 'alpha',
