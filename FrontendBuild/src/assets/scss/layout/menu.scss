@@ -38,10 +38,16 @@
 
 .mobile {
   .menu {
+    margin-top: $global-padding;
     li {
+      font-size: $global-font-size + 4;
       a {
         color: $white;
-        background-color: $primary-color;
+      }
+    }
+    &.accordion-menu {
+      & > li {
+        border-bottom: 1px solid $white;
       }
     }
   }
