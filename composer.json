@@ -1,15 +1,29 @@
 {
     "name": "kanow/fire-department",
     "type": "typo3-cms-extension",
-    "description": "FireDepartment package for sites",
-    "homepage": "https://undkonsorten.com",
+    "authors": [
+      {
+        "name": "Karsten Nowak",
+        "email": "captnnowi@gmx.de",
+        "homepage": "https://github.com/kanow",
+        "role": "Developer"
+      }
+    ],
+    "description": "Completely TYPO3 site package (theme) to build a website for a fire department. With the extension operations you are able to show operations on the website. For latest news are templates for the extensions news prepared. The whole page is optimized for mobile devices too.",
+    "homepage": "https://github.com/kanow/fire_department",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
-    "version": "1.0.0",
     "require": {
         "typo3/cms-core": "^9.5",
-        "typo3/cms-rte-ckeditor": "^9.5",
         "typo3/cms-fluid-styled-content": "^9.5"
+    },
+    "suggest": {
+      "kanow/operations": "Templating is prepared to show (firefighter) operations with TYPO3 extension \"operations\" in version ^4.0.",
+      "georgringer/news": "Templating is prepared to show latest news on your website with the extension \"news\"."
+    },
+    "replace": {
+      "fire-department": "self.version",
+      "typo3-ter/fire-department": "self.version"
     },
     "autoload": {
         "psr-4": {
