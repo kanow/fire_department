@@ -1,51 +1,73 @@
-# TYPO3 Sitepackage for fire brigades!
+# TYPO3 Sitepackage for fire departments!
 
-This is the first development of a TYPO3 theme extension for fire brigades. It should be a solution to setup a TYPO3 website for fire brigades in an easy way.
+This is a site package for a TYPO3 website optimized for fire departments. It should be a solution to setup a TYPO3 website for fire departments in an easy way.
 
-Planned feature at the moment:
+## Features
 
-* Responsive webdesign. The website should always looking good on different devices. e.g. Desktop PC, Tablets, mobile phones
-* The TYPO3 extension operations is used to manage firefighter operations.
- 
-##### Dependencies: 
+* Complete webpage layout optimized for mobile devices
+* Show operation data with the TYPO3 extensions "operations"
+* Templating is also prepared to show latest news with the extension TYPO3 "news"
+
+## Dependencies:
 
 * typo3/cms-core: ^9.5
-* kanow/operations: ^3.0
-    
-This extension is in an very earlier alpha state! Please do not use in production for now. Many things will be changed in the next time!
+* typo3/cms-fluid-styled-content: ^9.5
 
-I change this documentation if I think the extension ist ready for this.
+**optional**
 
-# Frontend build 
+* kanow/operations: ^4.0
+* georgringer/news: ^7.0
 
-I use Foundation Sites 6 to build the frontend stuff like css and js. If you want to change the frontend styling you need some software requirements on your computer. Please read the "Installation" section in the ZurbReadme.md file in the folder "FrontendBuild".
+# Frontend templating
+
+I use [Foundation for Sites](http://foundation.zurb.com/sites) to build the frontend stuff like css and js. Please read the "Installation" section in the ZurbReadme.md file in the folder "FrontendBuild" if you want change stuff here. In short you need: node, npm, yarn, gulp
 
 Fork the repository to keep your changes in your project.
 
-After copying and renaming the config.sample.yml file you have to adapt the projectdomain entry in the additional watch path to use the frontend build tool directly with your TYPO3 website. To start devloping and watching the files by the frontend toll you have to use the following command.
+After copying and renaming the config.sample.yml file you have to adapt the projectdomain entry in the additional watch path to use the frontend build tool directly with your TYPO3 website. To start developing with watched files by the frontend you have to use the following command.
 
     yarn run start --typo3
-     
+
 With
-  
+
     yarn run build --typo3
-    
-you can copy the the final frontend files to the TYPO3 extension Public folder without opening the website in browser.   
+
+you can copy the compiled frontend files to the TYPO3 extension Public folder without opening the website in browser. Later, TYPO3 loads frontend files from this folder.
 
 # TYPO3 Website für Feuerwehren
 
-Dies sind die ersten Schritte um eine sogenannte Theme-Extension für eine TYPO3 Website. Diese Extension solle es anderen ermöglich eine TYPO3 Webseite für Feuerwehren auf einfache Art zu erstellen.
+Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schnell eine TYPO3 Webseite für Feuerwehren zu erstellen
 
-Momentan ist geplant:
+## Das bietet diese Extension
 
-* Ein Responsives Webdesign. Die Webseite soll auf verschiedenen Geräten (Desktop Compouter, Laptop, Tablets, Handys) gleichermaßen gut zu bedienen und anzuschauen sein.
+* Ein komplettes Seiten-Layout, optimiert auch für Mobilgräte
 * Für die Darstellung und Verwaltung der Einsätze wird die TYPO3 Extension "operations" verwendet.
+* Außerdem ist das Templating für die Darstellung von aktuellen Meldungen mit Hilfe der TYPO3 Extension "news" ebenfalls vorbereitet und passt sich in die Webseite ein
 
-##### Systemvorraussetzungen: 
+## Systemvorraussetzungen:
 
 * typo3/cms-core: ^9.5
-* kanow/operations: ^3.0
+* typo3/cms-fluid-styled-content: ^9.5
 
-Achtung, die Extension ist in einem sehr frühen Stadium und sollte nicht für Produktiv Umgebungen / Live Seiten verwendet werden. Es kann sich enifach sehr schnell vieles ändern!
+**optional**
 
-Ich werde die Dokumentation entsprechend anpassen wenn es so weit ist und dieses Theme soweit ist.
+* kanow/operations: ^4.0 - für die Einsatzverwaltung
+* georgringer/news: ^7.0 - für aktuelle Meldungen
+
+# Das Frontend - Aussehen der Webseite
+
+Dafür nutze ich [Foundation for Sites](http://foundation.zurb.com/sites). Damit wird jede Menge Grundfunktionalität für das Aussehen bereitgestellt. Falls ihr da Anpassungen vornehmen wollt, schaut euch bitte die Systemvorraussetzungen in der `ZurbReadme.md` im Ordner `FrontendBuild` an. Im groben braucht ihr so etwas wie: node, npm, yarn, gulp auf eurem System.
+
+Damit Änderungen nach einem Update nicht verloren gehen, solltet ihr die Extensions "forken". Also eine Kopie davon erstellen. Wenn ihr wollt, könnt ihr das direkt auf Github tun. Dann habt ihr gleich die Versionierung dabei.
+
+Für die Anpassung des Frontends über den Frontendbuild, empfehle ich eine lokale Entwicklunsgumgebung.
+
+Nach dem Erstellen eures Forks, müsst ihr die `config.sample.yml` Datei kopieren nach `config.yml`. Dort könnt ihr dann eure eigene Projektdomain ergänzen um das Frontend direkt mit eurer lokalen TYPO3 Seite zu starten. Dazu ist dann folgendes Kommando notwendig:
+
+    yarn run start --typo3
+
+Mit
+
+    yarn run build --typo3
+
+könnt ihr einfach das fertig compilierte Frontend, also die css, js und auch Bilddateien, in den Public Ordner der Extension kopieren. Von dort läd später  TYPO3 die benötigten Dateien.
