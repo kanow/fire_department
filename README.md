@@ -71,3 +71,6 @@ Mit
     yarn run build --typo3
 
 könnt ihr einfach das fertig compilierte Frontend, also die css, js und auch Bilddateien, in den Public Ordner der Extension kopieren. Von dort läd später  TYPO3 die benötigten Dateien.
+
+
+Extension Icon by Diky Setiawan from the Noun Project https://thenounproject.com/ykid
