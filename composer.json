@@ -9,7 +9,7 @@
         "role": "Developer"
       }
     ],
-    "description": "Completely TYPO3 site package (theme) to build a website for a fire department. With the extension operations you are able to show operations on the website. For latest news are templates for the extensions news prepared. The whole page is optimized for mobile devices too.",
+    "description": "Complete TYPO3 site package (theme) to build a website for a fire department. With the extension operations you are able to show operations on the website. For latest news are templates for the extensions news prepared. The whole page is optimized for mobile devices too.",
     "homepage": "https://github.com/kanow/fire_department",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
