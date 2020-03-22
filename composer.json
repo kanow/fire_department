@@ -22,7 +22,7 @@
       "georgringer/news": "Templating is prepared to show latest news on your website with the extension \"news\"."
     },
     "replace": {
-      "fire-department": "self.version",
+      "kanow/fire-department": "self.version",
       "typo3-ter/fire-department": "self.version"
     },
     "autoload": {
