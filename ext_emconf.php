@@ -5,7 +5,7 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Fire department TYPO3 website theme',
-    'description' => 'Complete TYPO3 site package (theme) to build a website for a fire department. With the extension \"operations\" you can show operations on the website. For latest news are templates for \"news\" extension prepared. The whole template is optimized for mobile devices too.',
+    'description' => 'Complete TYPO3 site package (theme) to build a website for a fire department. With the extension "operations" you can show operations on the website. For latest news are templates for "news" extension prepared. The whole template is optimized for mobile devices too.',
     'category' => 'templates',
     'author' => 'Karsten Nowak',
     'author_email' => 'captnnowi@gmx.de',
