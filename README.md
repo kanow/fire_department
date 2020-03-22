@@ -1,6 +1,7 @@
 # TYPO3 Sitepackage for fire departments!
 
-This is a site package for a TYPO3 website optimized for fire departments. It should be a solution to setup a TYPO3 website for fire departments in an easy way.
+This is a site package for a TYPO3 website optimized for fire departments. It should be a solution to setup a TYPO3 website for fire departments in an easy way. Check TypoScript constants in `fire_department/Configuration/TypoScript/Page/constants.typoscript` and override settings in your own TypoScript if needed.
+
 
 ## Features
 
@@ -36,7 +37,7 @@ you can copy the compiled frontend files to the TYPO3 extension Public folder wi
 
 # TYPO3 Website für Feuerwehren
 
-Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schnell eine TYPO3 Webseite für Feuerwehren zu erstellen
+Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schnell eine TYPO3 Webseite für Feuerwehren zu erstellen. Schaut euch die TypoScript Konstanten in `fire_department/Configuration/TypoScript/Page/constants.typoscript` für die verschiedenen Einstellungen an und überschriebt diese bei Bedarf in eurem eigenen TypoScript.
 
 ## Das bietet diese Extension
 
