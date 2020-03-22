@@ -21,4 +21,9 @@ call_user_func(function ($extensionKey) {
         ]
     );
 
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+        $extensionKey,
+        'Configuration/TsConfig/Page/All.page.typoscript',
+        'EXT:fire_department TSConfig');
+
 }, 'fire_department');
