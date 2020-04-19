@@ -8,3 +8,4 @@ config.yml
 .cache
 .idea
 package-lock.json
+certs/*

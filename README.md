@@ -28,7 +28,7 @@ I use [Foundation for Sites](http://foundation.zurb.com/sites) to build the fron
 
 Fork the repository to keep your changes in your project.
 
-After copying and renaming the config.sample.yml file you have to adapt the projectdomain entry in the additional watch path to use the frontend build tool directly with your TYPO3 website. To start developing with watched files by the frontend you have to use the following command.
+After copying and renaming the config.sample.yml file you have to adapt the projectdomain entry in the additional watch path to use the frontend build tool directly with your TYPO3 website. Consider the comments in the section for usage https protocol. "mkcert" has to be installed for this. To start developing with watched files by the frontend you have to use the following command.
 
     yarn run start --typo3
 
@@ -70,7 +70,7 @@ Damit Änderungen nach einem Update nicht verloren gehen, solltet ihr die Extens
 
 Für die Anpassung des Frontends über den Frontendbuild, empfehle ich eine lokale Entwicklunsgumgebung.
 
-Nach dem Erstellen eures Forks, müsst ihr die `config.sample.yml` Datei kopieren nach `config.yml`. Dort könnt ihr dann eure eigene Projektdomain ergänzen um das Frontend direkt mit eurer lokalen TYPO3 Seite zu starten. Dazu ist dann folgendes Kommando notwendig:
+Nach dem Erstellen eures Forks, müsst ihr die `config.sample.yml` Datei kopieren nach `config.yml`. Beachtet bitte die Kommentare in dem Bereich für die Nutzung mittels https. "mkcert" muss bei euch installiert sein. Dort könnt ihr dann eure eigene Projektdomain ergänzen um das Frontend direkt mit eurer lokalen TYPO3 Seite zu starten. Dazu ist dann folgendes Kommando notwendig:
 
     yarn run start --typo3
 
