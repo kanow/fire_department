@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '9.5.0 - 10.9.99',
         ],
-        'suggest' => [
+        'suggests' => [
             'operations' => '4.0.0 - 0.0.0'
         ],
     ],
