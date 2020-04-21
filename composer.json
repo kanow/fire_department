@@ -14,10 +14,10 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
-        "typo3/cms-core": "^9.5 || ^10 || 10-dev"
+        "typo3/cms-core": "^9.5 || ^10"
     },
     "suggest": {
-      "kanow/operations": "Templating is prepared to show (firefighter) operations with TYPO3 extension \"operations\" in version ^4.0.",
+      "kanow/operations": "Templating is prepared to show (firefighter) operations with TYPO3 extension \"operations\" in version ^5.0.",
       "georgringer/news": "Templating is prepared to show latest news on your website with the extension \"news\"."
     },
     "replace": {

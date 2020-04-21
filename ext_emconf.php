@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '9.5.0 - 10.9.99',
         ],
         'suggests' => [
-            'operations' => '4.0.0 - 0.0.0'
+            'operations' => '5.0.0 - 0.0.0'
         ],
     ],
     'uploadfolder' => 0,
