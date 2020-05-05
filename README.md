@@ -38,6 +38,20 @@ With
 
 you can copy the compiled frontend files to the TYPO3 extension Public folder without opening the website in browser. Later, TYPO3 loads frontend files from this folder.
 
+## Trouble?
+
+If you have an error on executed task `server` on running `yarn run start --typo3`, create the cert files again like described in the comment in config.yaml file. Maybe that helps.
+On my test instance I had those error message today:
+
+     Starting 'server'...
+    [21:11:47] 'server' errored after 89 ms
+    [21:11:47] Error: error:0D07209B:asn1 encoding routines:ASN1_get_object:too long
+        at Object.createSecureContext (_tls_common.js:156:17)
+        at Server (_tls_wrap.js:903:27)
+        at new Server (https.js:62:14)
+        at Object.createServer (https.js:85:10)
+
+
 # TYPO3 Website für Feuerwehren
 
 Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schnell eine TYPO3 Webseite für Feuerwehren zu erstellen.
@@ -80,5 +94,18 @@ Mit
 
 könnt ihr einfach das fertig compilierte Frontend, also die css, js und auch Bilddateien, in den Public Ordner der Extension kopieren. Von dort läd später  TYPO3 die benötigten Dateien.
 
+## Ärger?
+
+Wenn du Problem beim Ausführen des Befehls `yarn run start --typo3` bei dem Task `server` hast, hilft vielleicht ein neu generieren der Zetifikatsdateien im Ordner `certs`. Die dann einfach nochmal, wie in dem Kommentar in der config.yaml angegeben, erzeugen lassen.
+
+Ich hatte heute diese Fehlermeldung beim Starten des Frontends:
+
+     Starting 'server'...
+    [21:11:47] 'server' errored after 89 ms
+    [21:11:47] Error: error:0D07209B:asn1 encoding routines:ASN1_get_object:too long
+        at Object.createSecureContext (_tls_common.js:156:17)
+        at Server (_tls_wrap.js:903:27)
+        at new Server (https.js:62:14)
+        at Object.createServer (https.js:85:10)
 
 Extension Icon by Diky Setiawan from the Noun Project https://thenounproject.com/ykid
