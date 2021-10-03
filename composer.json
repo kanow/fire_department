@@ -14,15 +14,19 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
-        "typo3/cms-core": "^9.5 || ^10 || ^11"
+        "typo3/cms-core": "^9.5 || ^10.4 || ^11.4"
     },
     "suggest": {
       "kanow/operations": "Templating is prepared to show (firefighter) operations with TYPO3 extension \"operations\" in version ^5.0.",
       "georgringer/news": "Templating is prepared to show latest news on your website with the extension \"news\"."
     },
     "replace": {
-      "kanow/fire-department": "self.version",
       "typo3-ter/fire-department": "self.version"
+    },
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "fire_department"
+      }
     },
     "autoload": {
         "psr-4": {
