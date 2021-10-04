@@ -86,7 +86,6 @@ page {
             }
         }
     }
-
     meta {
         viewport = {$fire_department.page.meta.viewport}
         robots = {$fire_department.page.meta.robots}
@@ -107,7 +106,6 @@ page {
         X-UA-Compatible {
             attribute = http-equiv
         }
-
         # OpenGraph Tags
         og:title {
             attribute = property

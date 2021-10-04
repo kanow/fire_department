@@ -6,7 +6,7 @@ kanow.menu.language {
         special = language
         special.value = 0,1
         special.normalWhenNoLanguage = 0
-        wrap =
+        wrap = 
         1 = TMENU
         1 {
             noBlur = 1
@@ -42,5 +42,3 @@ kanow.menu.language {
         }
     }
 }
-
-

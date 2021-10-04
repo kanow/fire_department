@@ -3,7 +3,6 @@ page {
         operations >
         fire_department_layout = EXT:fire_department/Resources/Public/Build/css/app.css
     }
-
     includeJSFooter {
         fire_department_scripts = EXT:fire_department/Resources/Public/Build/js/app.js
     }

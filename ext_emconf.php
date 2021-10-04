@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'captnnowi@gmx.de',
     'version' => '1.1.0',
     'state' => 'beta',
-    'clearCacheOnLoad' => 1,
+    'clearCacheOnLoad' => true,
     'constraints' => [
         'depends' => [
             'typo3' => '9.5.0 - 11.0.99',
@@ -20,8 +20,6 @@ $EM_CONF[$_EXTKEY] = [
             'operations' => '5.0.0 - 0.0.0'
         ],
     ],
-    'uploadfolder' => 0,
-    'createDirs' => '',
     'autoload' => [
         'psr-4' => [
             'Kanow\\FireDepartment\\' => 'Classes'

@@ -5,6 +5,6 @@ plugin.tx_news {
         layoutRootPath = EXT:fire_department/Resources/Private/News/Layouts/
     }
     settings {
-        cssFile =
+        cssFile = 
     }
 }

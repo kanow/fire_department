@@ -1,9 +1,9 @@
 #
 # PageTS for FireDepartment
 #
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fire_department/Configuration/TsConfig/Page/BackendLayouts" extensions="page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fire_department/Configuration/TsConfig/Page/TCEFORM.page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fire_department/Configuration/TsConfig/Page/TCEMAIN.page.typoscript">
+@import 'EXT:fire_department/Configuration/TsConfig/Page/BackendLayouts/*.page.typoscript'
+@import 'EXT:fire_department/Configuration/TsConfig/Page/TCEFORM.page.typoscript'
+@import 'EXT:fire_department/Configuration/TsConfig/Page/TCEMAIN.page.typoscript'
 
 tx_news.templateLayouts {
     Short = Kleine Liste
