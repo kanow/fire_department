@@ -1,6 +1,7 @@
 plugin.tx_news {
     settings {
-        defaultDetailPid = 32
+        # should be set in database
+        #defaultDetailPid = 32
         list {
             paginate {
                 itemsPerPage = 3
