@@ -1,0 +1,56 @@
+routeEnhancers:
+  OperationsPlugin:
+    # set `limitToPages:` for route enhancer directly in your site config
+    type: Extbase
+    extension: Operations
+    plugin: List
+    routes:
+      -
+        routePath: '/{localized_page}-{page}'
+        _controller: 'Operation::list'
+        _arguments:
+          page: currentPage
+      -
+        routePath: '/{operation_title}'
+        _controller: 'Operation::show'
+        _arguments:
+          operation_title: operation
+      -
+        routePath: '/{vehicle_title}'
+        _controller: 'Vehicle::show'
+        _arguments:
+          vehicle_title: vehicle
+      -
+        routePath: '/{resource_title}'
+        _controller: 'Resource::show'
+        _arguments:
+          resource_title: resource
+
+    defaultController: 'Operation::list'
+    defaults:
+      page: '1'
+    requirements:
+      page: \d+
+    aspects:
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '200'
+      operation_title:
+        type: PersistedAliasMapper
+        tableName: tx_operations_domain_model_operation
+        routeFieldName: path_segment
+      vehicle_title:
+        type: PersistedAliasMapper
+        tableName: tx_operations_domain_model_vehicle
+        routeFieldName: path_segment
+      resource_title:
+        type: PersistedAliasMapper
+        tableName: tx_operations_domain_model_resource
+        routeFieldName: path_segment
+      localized_page:
+        type: LocaleModifier
+        default: 'page'
+        localeMap:
+          - locale: 'de_DE.*'
+            value: 'seite'
