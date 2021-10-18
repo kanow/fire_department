@@ -1,12 +1,4 @@
 EXT:fluid_styled_content/Configuration/TypoScript,
 
 EXT:operations/Configuration/TypoScript,
-EXT:news/Configuration/TypoScript,
-
-EXT:fire_department/Configuration/TypoScript/Config,
-EXT:fire_department/Configuration/TypoScript/Page,
-EXT:fire_department/Configuration/TypoScript/Resources,
-EXT:fire_department/Configuration/TypoScript/Helper,
-EXT:fire_department/Configuration/TypoScript/Menu/Language,
-EXT:fire_department/Configuration/TypoScript/News,
-
+EXT:news/Configuration/TypoScript
