@@ -1,0 +1,6 @@
+@import './Config/setup.typoscript'
+@import './Page/setup.typoscript'
+@import './Resources/setup.typoscript'
+@import './Helper/setup.typoscript'
+@import './Menu/Language/setup.typoscript'
+@import './News/setup.typoscript'

@@ -9,9 +9,9 @@ fire_department {
             templateRootPath = EXT:fire_department/Resources/Private/Page/Templates/
         }
         meta {
-            description =
-            author =
-            keywords =
+            description = 
+            author = 
+            keywords = 
             viewport = width=device-width, initial-scale=1
             robots = index,follow
             apple-mobile-web-app-capable = no
@@ -19,7 +19,7 @@ fire_department {
         }
         tracking {
             google {
-                trackingID =
+                trackingID = 
                 anonymizeIp = 1
             }
         }

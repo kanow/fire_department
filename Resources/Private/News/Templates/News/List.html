@@ -1,3 +1,4 @@
+<!--suppress HtmlRequiredLangAttribute -->
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
 	  data-namespace-typo3-fluid="true">
@@ -20,11 +21,15 @@
                         </f:for>
                     </f:then>
                     <f:else>
-                        <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit,recordId:contentObjectData.uid}">
-                            <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-                                <f:render partial="List/{settings.templateLayout}Item" arguments="{newsItem: newsItem,iterator:iterator}" />
-                            </f:for>
-                        </n:widget.paginate>
+                        <f:if condition="{settings.list.paginate.insertAbove}">
+                            <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                        </f:if>
+                        <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="iterator">
+                            <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                        </f:for>
+                        <f:if condition="{settings.list.paginate.insertBelow}">
+                            <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                        </f:if>
                     </f:else>
                 </f:if>
 

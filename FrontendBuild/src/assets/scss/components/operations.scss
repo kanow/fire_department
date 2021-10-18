@@ -38,8 +38,22 @@
       }
     }
     &--meta {
-      @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
+      @include xy-cell($gutter-type: padding, $gutter-position: top left bottom right);
+      @include breakpoint(medium) {
+        @include xy-cell($size:11, $gutter-type:none);
+      }
       @include operations-listItem-meta();
+    }
+    &--number {
+      @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);
+      @include breakpoint(medium) {
+        @include xy-cell($size:1,$gutter-type:none);
+      }
+      margin-bottom: $global-padding;
+      text-align: center;
+      background-color: $medium-gray;
+      color: $black;
+      font-weight: bold;
     }
     &--teaser {
       @include xy-cell($gutter-type: padding, $gutter-position: top bottom left right);

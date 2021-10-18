@@ -1,0 +1,27 @@
+routeEnhancers:
+  News:
+    # set `limitToPages:` for route enhancer directly in your site config
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      - routePath: 'news-seiten-{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: 'currentPage'
+      - routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+    defaultController: 'News::list'
+    defaults:
+      page: '0'
+    aspects:
+      news-title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'

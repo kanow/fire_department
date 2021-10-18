@@ -2,7 +2,7 @@
 
 This is a site package for a TYPO3 website optimized for fire departments. It should be a solution to setup a TYPO3 website for fire departments in an easy way.
 
- * Include Page TSconfig from the extension in page properties of your root page (tab Resources).
+ * Include Page TS-Config from the extension in page properties of your root page (tab Resources).
  * Include TypoScript of fire_department in your root TypoScript template.
  * Check TypoScript constants in `fire_department/Configuration/TypoScript/Page/constants.typoscript` and override settings in your own TypoScript if needed.
 
@@ -10,17 +10,18 @@ This is a site package for a TYPO3 website optimized for fire departments. It sh
 
 * Complete webpage layout optimized for mobile devices
 * Show operation data with the TYPO3 extensions "operations"
-* Templating is also prepared to show latest news with the extension TYPO3 "news"
+* Templating is also prepared to show latest news with the TYPO3 extension "news"
 
 ## Dependencies:
 
-* typo3/cms-core: ^9.5
-* typo3/cms-fluid-styled-content: ^9.5
+* typo3/cms-core: ^11.5
+* typo3/cms-fluid: ^11.5
+* typo3/cms-fluid-styled-content: ^11.5
 
 **optional**
 
-* kanow/operations: ^4.0
-* georgringer/news: ^7.0
+* kanow/operations
+* georgringer/news
 
 # Frontend templating
 
@@ -38,6 +39,11 @@ With
 
 you can copy the compiled frontend files to the TYPO3 extension Public folder without opening the website in browser. Later, TYPO3 loads frontend files from this folder.
 
+## Trouble?
+
+If you have an error on executed task `server` on running `yarn run start --typo3`, create the cert files again like described in the comment in config.yaml file. Maybe that helps.
+
+
 # TYPO3 Website für Feuerwehren
 
 Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schnell eine TYPO3 Webseite für Feuerwehren zu erstellen.
@@ -54,13 +60,14 @@ Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schne
 
 ## Systemvorraussetzungen:
 
-* typo3/cms-core: ^9.5
-* typo3/cms-fluid-styled-content: ^9.5
+* typo3/cms-core: ^11.5
+* typo3/cms-fluid: ^11.5
+* typo3/cms-fluid-styled-content: ^11.5
 
 **optional**
 
-* kanow/operations: ^4.0 - für die Einsatzverwaltung
-* georgringer/news: ^7.0 - für aktuelle Meldungen
+* kanow/operations - für die Einsatzverwaltung
+* georgringer/news - für aktuelle Meldungen
 
 # Das Frontend - Aussehen der Webseite
 
@@ -80,5 +87,8 @@ Mit
 
 könnt ihr einfach das fertig compilierte Frontend, also die css, js und auch Bilddateien, in den Public Ordner der Extension kopieren. Von dort läd später  TYPO3 die benötigten Dateien.
 
+## Ärger?
+
+Wenn du Problem beim Ausführen des Befehls `yarn run start --typo3` bei dem Task `server` hast, hilft vielleicht ein neu generieren der Zetifikatsdateien im Ordner `certs`. Die dann einfach nochmal, wie in dem Kommentar in der config.yaml angegeben, erzeugen lassen.
 
 Extension Icon by Diky Setiawan from the Noun Project https://thenounproject.com/ykid
