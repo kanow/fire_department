@@ -21,9 +21,4 @@ $EM_CONF[$_EXTKEY] = [
             'news' => '7.0.0 - 0.0.0'
         ],
     ],
-    'autoload' => [
-        'psr-4' => [
-            'Kanow\\FireDepartment\\' => 'Classes'
-        ],
-    ],
 ];

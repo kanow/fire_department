@@ -27,10 +27,5 @@
       "typo3/cms": {
         "extension-key": "fire_department"
       }
-    },
-    "autoload": {
-        "psr-4": {
-            "Kanow\\FireDepartment\\": "Classes/"
-        }
     }
 }
