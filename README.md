@@ -14,9 +14,9 @@ This is a site package for a TYPO3 website optimized for fire departments. It sh
 
 ## Dependencies:
 
-* typo3/cms-core: ^11.5
-* typo3/cms-fluid: ^11.5
-* typo3/cms-fluid-styled-content: ^11.5
+* typo3/cms-core: ^11.5 || ^12.4
+* typo3/cms-fluid: ^11.5 || ^12.4
+* typo3/cms-fluid-styled-content: ^11.5 || ^12.4
 
 **optional**
 
@@ -60,9 +60,9 @@ Diese Extension ist ein TYPO3 Site-Package um ohne größere Vorkenntnisse schne
 
 ## Systemvorraussetzungen:
 
-* typo3/cms-core: ^11.5
-* typo3/cms-fluid: ^11.5
-* typo3/cms-fluid-styled-content: ^11.5
+* typo3/cms-core: ^11.5 || ^12.4
+* typo3/cms-fluid: ^11.5 || ^12.4
+* typo3/cms-fluid-styled-content: ^11.5 || ^12.4
 
 **optional**
 
