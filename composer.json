@@ -26,6 +26,9 @@
     "extra": {
       "typo3/cms": {
         "extension-key": "fire_department"
+      },
+      "branch-alias": {
+        "dev-main": "1.3.x-dev"
       }
     }
 }

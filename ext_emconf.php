@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpUndefinedVariableInspection */
 
 /**
  * Extension Manager/Repository config file for ext "fire_department".
@@ -17,8 +17,8 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '11.5.0 - 12.4.99',
         ],
         'suggests' => [
-            'operations' => '5.0.0 - 0.0.0',
-            'news' => '7.0.0 - 0.0.0'
+            'operations' => '8.0.0 - 0.0.0',
+            'news' => '11.0.0 - 11.99.99'
         ],
     ],
 ];
