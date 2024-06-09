@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => true,
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0 - 12.4.99',
+            'typo3' => '11.5.0 - 13.1.99',
         ],
         'suggests' => [
             'operations' => '8.0.0 - 0.0.0',
