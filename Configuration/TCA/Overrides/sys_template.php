@@ -1,8 +1,8 @@
 <?php
+
 defined('TYPO3') || die();
 
-call_user_func(function()
-{
+call_user_func(function () {
     $extensionKey = 'fire_department';
 
     /**

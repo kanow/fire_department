@@ -1,4 +1,5 @@
 <?php
+
 defined('TYPO3') || die();
 
 call_user_func(function ($extensionKey) {
@@ -13,7 +14,7 @@ call_user_func(function ($extensionKey) {
                 'allowedAspectRatios' => [
                     '3:1' => [
                         'title' => $ll . 'pageHeader.crop_variant.default',
-                        'value' => 3 / 1
+                        'value' => 3 / 1,
                     ],
                 ],
                 'selectedRatio' => '3:1',
@@ -24,6 +25,7 @@ call_user_func(function ($extensionKey) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
         'Configuration/TsConfig/Page/All.page.typoscript',
-        'EXT:fire_department TSConfig');
+        'EXT:fire_department TSConfig'
+    );
 
 }, 'fire_department');
