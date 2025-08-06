@@ -66,7 +66,7 @@ page {
                         1.wrap = |
                     }
                 }
-                ifEmpty = main
+                ifEmpty = default
             }
             pageMediaIfEmpty = IMG_RESOURCE
             pageMediaIfEmpty {
