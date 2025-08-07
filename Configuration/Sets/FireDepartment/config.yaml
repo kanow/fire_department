@@ -1,0 +1,6 @@
+name: kanow/fire-department
+label: 'Fire Department Site Package'
+dependencies:
+  - typo3/fluid-styled-content
+  - kanow/operations
+  - georgringer/news

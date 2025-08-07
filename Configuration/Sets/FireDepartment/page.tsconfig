@@ -1,0 +1,5 @@
+@import 'EXT:fire_department/Configuration/TsConfig/BackenLayouts/Default.page.typoscript'
+@import 'EXT:fire_department/Configuration/TsConfig/BackendLayouts/TwoColumns.page.typoscript'
+@import 'EXT:fire_department/Configuration/TsConfig/All.page.typoscript'
+@import 'EXT:fire_department/Configuration/TsConfig/TCEFORM.page.typoscript'
+@import 'EXT:fire_department/Configuration/TsConfig/TCEMAIN.page.typoscript'
