@@ -14,11 +14,9 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
-        "typo3/cms-core": "^11.4 || ^12.4 || ^13.4"
-    },
-    "suggest": {
-      "kanow/operations": "Templating is prepared to show (firefighter) operations with TYPO3 extension \"operations\".",
-      "georgringer/news": "Templating is prepared to show latest news on your website with the extension \"news\"."
+        "typo3/cms-core": "^11.4 || ^12.4 || ^13.4",
+		"kanow/operations": "^8",
+		"georgringer/news": "^11 || ^12"
     },
     "replace": {
       "typo3-ter/fire-department": "self.version"
